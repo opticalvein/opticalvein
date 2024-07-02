@@ -6,3 +6,9 @@ body {
     padding-top: 50px;
 
 }
+
+@font-face {
+    font-family: 'LoveLetter';
+    src: url('LoveLetter.ttf') format('truetype'); 
+}
+
