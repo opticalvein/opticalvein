@@ -10,6 +10,6 @@ body {
 
 @font-face {
     font-family: 'LoveLetter';
-    src: url('LoveLetter.ttf') format('truetype'); 
+    src: url('fonts/LoveLetter.ttf') format('truetype'); 
 }
 
