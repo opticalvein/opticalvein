@@ -7,9 +7,9 @@ body {
 
 @font-face {
     font-family: 'myFont';
-    src: url('fonts/love.woff2') format('woff2'),
-         url('fonts/love.woff') format('woff'),
-         url('fonts/love.ttf') format('truetype');
+    src: url('fonts/LoveLetter.woff2') format('woff2'),
+         url('fonts/LoveLetter.woff') format('woff'),
+         url('fonts/LoveLetter.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
