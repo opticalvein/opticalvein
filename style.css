@@ -27,3 +27,7 @@ h1 {
 .link:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+.main-page {
+    background-color: #000000;
+}
