@@ -10,11 +10,11 @@ body {
     src: url('fonts/LoveLetter.woff2') format('woff2'),
          url('fonts/LoveLetter.woff') format('woff'),
          url('fonts/LoveLetter.TTF') format('truetype');
-    font-weight: 300;
-    font-style: normal;
 }
 
 h1 { 
+    font-weight: 300;
+    font-style: normal;
     font-family: 'myFont';
     padding-top: 20px
 }
