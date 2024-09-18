@@ -8,10 +8,11 @@ body {
 }
 
 @font-face {
-    font-family: 'LoveLetter';
+    font-family: 'myFont';
     src:url(fonts/LoveLetter.ttf);
         
 }
 
 h1{ 
-    font-family: LoveLetter;
+    font-family: myFont;
+}
