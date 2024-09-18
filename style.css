@@ -1,5 +1,4 @@
 body {
-    background-color: #000000;
     color: #FFFFFF;
     text-align: center;
     padding-top: 50px;
@@ -26,5 +25,14 @@ h1 {
 
 .link:hover {
     text-decoration: underline; /* Underline on hover */
+}
+
+.index-page {
+    background-color: #000000; /* Black background */
+}
+
+/* Styles for Second Page */
+.main-page {
+    background-color: #000000; /* Black background */
 }
 
