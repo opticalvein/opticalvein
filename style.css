@@ -5,7 +5,7 @@ body {
     padding-top: 50px;
 }
 
-matrix-background {
+#matrix-background {
      position: fixed;
      top: 0;
      left: 0;
