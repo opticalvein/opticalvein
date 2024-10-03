@@ -28,12 +28,12 @@ h1 {
     padding-top: 20px
 }
 
-.link {
+.enter-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit the color from the parent element */
 }
 
-.link:hover {
+.enter-link:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
@@ -41,15 +41,16 @@ h1 {
     background-color: #000000;
 }
 
-#main-page .back-link {
+.back-link {
     padding-top: 20px;
     margin-top: 20px;
 }
 
-#main-page .back-link::before {
-    content: '';
-    display: block;
-    height: 1px;
-    background-color: #ccc;
-    margin-bottom: 20px;
+.back-link {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.back-link:hover {
+    text-decoration: underline;
 }
