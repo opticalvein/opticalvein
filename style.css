@@ -40,3 +40,16 @@ h1 {
 .main-page {
     background-color: #000000;
 }
+
+#main-page .back-link {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+#main-page .back-link::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
