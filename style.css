@@ -24,11 +24,11 @@ body {
 h1 { 
     font-weight: 300;
     font-style: normal;
-    font-family: 'myFont', sans-serif; /* Added fallback font */
+    font-family: 'myFont', sans-serif; 
     padding-top: 20px;
 }
 
-/* Combined .enter-link and .back-link styles for efficiency */
+
 .enter-link,
 .back-link {
     text-decoration: none;
@@ -51,12 +51,3 @@ h1 {
     margin-top: 50px;    
     display: inline-block; 
     text-align: center;
-
-.back-link a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.back-link a:hover {
-    text-decoration: underline;
-}
