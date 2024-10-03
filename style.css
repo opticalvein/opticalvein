@@ -6,12 +6,12 @@ body {
 }
 
 #matrix-background {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 @font-face {
@@ -24,33 +24,39 @@ body {
 h1 { 
     font-weight: 300;
     font-style: normal;
-    font-family: 'myFont';
-    padding-top: 20px
+    font-family: 'myFont', sans-serif; /* Added fallback font */
+    padding-top: 20px;
 }
 
-.enter-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color from the parent element */
+/* Combined .enter-link and .back-link styles for efficiency */
+.enter-link,
+.back-link {
+    text-decoration: none;
+    color: inherit;
 }
 
-.enter-link:hover {
-    text-decoration: underline; /* Underline on hover */
+.enter-link:hover,
+.back-link:hover {
+    text-decoration: underline;
 }
 
+/* This class seems unused, consider removing if not needed */
 .main-page {
     background-color: #000000;
 }
 
+/* Specific styles for back-link */
 .back-link {
     padding-top: 20px;
     margin-top: 20px;
 }
 
-.back-link {
+/* Optional: Add this if you want to style the anchor inside .back-link */
+.back-link a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
-.back-link:hover {
+.back-link a:hover {
     text-decoration: underline;
 }
