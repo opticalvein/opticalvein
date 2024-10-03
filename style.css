@@ -40,18 +40,18 @@ h1 {
     text-decoration: underline;
 }
 
-/* This class seems unused, consider removing if not needed */
+
 .main-page {
     background-color: #000000;
 }
 
-/* Specific styles for back-link */
-.back-link {
-    padding-top: 20px;
-    margin-top: 20px;
-}
 
-/* Optional: Add this if you want to style the anchor inside .back-link */
+.back-link {
+    position: relative;  
+    margin-top: 50px;    
+    display: inline-block; 
+    text-align: center;
+
 .back-link a {
     text-decoration: none;
     color: inherit;
