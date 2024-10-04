@@ -36,7 +36,7 @@ h1 {
 }
 
 .enter-link:hover,
-.back-link a:hover {
+.back-link:hover {
     text-decoration: underline;
 }
 
