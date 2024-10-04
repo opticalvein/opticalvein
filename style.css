@@ -33,11 +33,10 @@ h1 {
 .back-link {
     text-decoration: none;
     color: inherit;
-    color: #FFFFFF;
 }
 
 .enter-link:hover,
-.back-link:hover {
+.back-link a:hover {
     text-decoration: underline;
 }
 
