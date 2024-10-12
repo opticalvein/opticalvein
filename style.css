@@ -2,7 +2,7 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 
@@ -15,8 +15,8 @@ body {
 
 
 .no-right-click {
-    pointer-events: none; /* Disables right-clicking */
-    user-select: none;    /* Prevents selecting the image */
+    pointer-events: none; 
+    user-select: none;   
 }
 
 
