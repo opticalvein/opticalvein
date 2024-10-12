@@ -9,7 +9,20 @@
 </head>
 <body>
 
-<img src="images/skulls_dithered.gif" alt="skulls_dithered" class="no-right-click">
+ <div class="container">
+        <img src="images/skulls_dithered.gif" alt="skulls_dithered" class="no-right-click">
+    </div>
+
+<script>
+
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.classList.contains('no-right-click')) {
+        e.preventDefault(); // Prevents the context menu from showing
+    }
+}, false);
+
+      
+</script>
 
  
 </head>
