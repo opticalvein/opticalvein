@@ -16,7 +16,7 @@ body {
 .container {
     width: 100%;
     height: 500px; 
-    background-image: url('skulls.png');
+    background-image: url('skulls_dithered.gif');
     background-size: auto; 
     background-position: center; 
     background-repeat: no-repeat; 
