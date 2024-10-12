@@ -30,26 +30,3 @@ h1 {
     padding-top: 20px;
 }
 
-
-.enter-link,
-.back-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.enter-link:hover,
-.back-link:hover {
-    text-decoration: underline;
-}
-
-
-.main-page {
-    background-color: #000000;
-}
-
-
-.back-link {
-    position: relative;  
-    margin-top: 50px;    
-    display: inline-block; 
-    text-align: center;
