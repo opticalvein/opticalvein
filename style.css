@@ -13,15 +13,6 @@ body {
          url('fonts/LoveLetter.TTF') format('truetype');
 }
 
-.container {
-    width: 100%;
-    height: 500px; 
-    background-image: url('images/skulls_dithered.gif');
-    background-size: auto; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    pointer-events: none; 
-}
 
 h1 { 
     font-weight: 300;
