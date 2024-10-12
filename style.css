@@ -17,8 +17,6 @@ body {
 .no-right-click {
     pointer-events: none; 
     user-select: none;  
-    width: auto;    
-    height: auto;
 }
 
 
