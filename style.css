@@ -19,6 +19,12 @@ body {
     user-select: none;  
 }
 
+.container {
+            display: flex;          
+            justify-content: center; 
+            align-items: center;   
+            height: 500px;          
+        }
 
 h1 { 
     font-weight: 300;
