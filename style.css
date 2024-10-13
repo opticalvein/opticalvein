@@ -11,10 +11,8 @@ body {
 
 
 @font-face {
-    font-family: 'myFont';
-    src: url('fonts/LoveLetter.woff2') format('woff2'),
-         url('fonts/LoveLetter.woff') format('woff'),
-         url('fonts/LoveLetter.TTF') format('truetype');
+    font-family: 'baskerville';
+    src: url('fonts/baskerville.ttf') format('truetype');
 }
 
 
