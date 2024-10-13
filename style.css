@@ -29,13 +29,6 @@ body {
     width: 100%;  
 }
 
-h1 { 
-    font-weight: 300;
-    font-style: normal;
-    font-family: 'myFont', sans-serif; 
-    padding-top: 20px;
-}
-
 .links {
     position: absolute;
     display: flex;
@@ -58,11 +51,17 @@ h1 {
     text-decoration: underline;
         }
 
-.top-center { top: 5%; left: 50%; transform: translateX(-50%); }
-.bottom-center { bottom: 5%; left: 50%; transform: translateX(-50%); }
-.top-left { top: 15%; left: 20%; }
-.top-right { top: 15%; right: 20%; }
-.bottom-left { bottom: 15%; left: 20%; }
-.bottom-right { bottom: 15%; right: 20%; }
+.top-center { top: 20%; left: 50%; transform: translateX(-50%); }
+.bottom-center { bottom: 20%; left: 50%; transform: translateX(-50%); }
+.top-left { top: 30%; left: 30%; }
+.top-right { top: 30%; right: 30%; }
+.bottom-left { bottom: 30%; left: 30%; }
+.bottom-right { bottom: 30%; right: 30%; }
+
+h1 { 
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'myFont', sans-serif;
+}
 
 
