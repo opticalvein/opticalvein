@@ -36,3 +36,33 @@ h1 {
     padding-top: 20px;
 }
 
+.links {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+        }
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 10px;
+    font-family: 'myFont', sans-serif;
+    font-size: 16px;
+    position: absolute;
+        }
+
+.link:hover {
+    text-decoration: underline;
+        }
+
+.top-center { top: 5%; left: 50%; transform: translateX(-50%); }
+.bottom-center { bottom: 5%; left: 50%; transform: translateX(-50%); }
+.top-left { top: 15%; left: 20%; }
+.top-right { top: 15%; right: 20%; }
+.bottom-left { bottom: 15%; left: 20%; }
+.bottom-right { bottom: 15%; right: 20%; }
+
+
