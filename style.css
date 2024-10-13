@@ -60,6 +60,13 @@ body {
 .bottom-left { bottom: 30%; left: 30%; }
 .bottom-right { bottom: 30%; right: 30%; }
 
+img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+        }
+
 .copyright {
     color: #FFFFFF;
     font-size: 14px;
