@@ -42,8 +42,10 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     margin: 10px;
-    font-family: 'myFont', sans-serif;
-    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'baskerville', sans-serif;
+    font-size: 18px;
     position: absolute;
         }
 
@@ -57,11 +59,4 @@ body {
 .top-right { top: 30%; right: 30%; }
 .bottom-left { bottom: 30%; left: 30%; }
 .bottom-right { bottom: 30%; right: 30%; }
-
-h1 { 
-    font-weight: 300;
-    font-style: normal;
-    font-family: 'myFont', sans-serif;
-}
-
 
