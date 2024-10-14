@@ -71,7 +71,7 @@ body {
     .link {
         font-size: 18px;
     }
-    .skull-image {
+    .skulls_dithered {
         width: 50%; 
     }
 }
@@ -80,7 +80,7 @@ body {
     .link {
         font-size: 14px;
     }
-    .skull-image {
+    .skulls_dithered {
         width: 60%; 
     }
 }
