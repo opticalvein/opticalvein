@@ -22,76 +22,62 @@ body {
 }
 
 .container {
-    position: relative;
-    display: grid;
-    place-items: center;
-    height: 80vh; 
-    width: 100%;
-    margin-bottom: 20px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   width: 100%;
+   flex-direction: column;
 }
 
-.skulls_dithered {
-    width: 40%; 
-    max-width: 400px; 
-}
-
-.button-container {
+.links {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-areas:
-        ". . top-center . ."
-        ". top-left . top-right ."
-        "bottom-left . . . bottom-right"
-        ". . bottom-center . .";
-    place-items: center;
 }
 
 .link {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: 'baskerville', sans-serif;
+    font-family: 'baskerville', serif;
     font-size: 24px;
-    transition: text-decoration 0.3s ease;
+    position: absolute;
+    margin: 0;
 }
 
 .link:hover {
     text-decoration: underline;
 }
 
-.top-center { grid-area: top-center; }
-.top-left { grid-area: top-left; }
-.top-right { grid-area: top-right; }
-.bottom-left { grid-area: bottom-left; }
-.bottom-right { grid-area: bottom-right; }
-.bottom-center { grid-area: bottom-center; }
+.top-center { top: 15vh; left: 50vw; transform: translate(-50%, -50%); }
+.bottom-center { bottom: 15vh; left: 50vw; transform: translate(-50%, 50%); }
+.top-left { top: 25vh; left: 25vw; }
+.top-right { top: 25vh; right: 25vw; }
+.bottom-left { bottom: 25vh; left: 25vw; }
+.bottom-right { bottom: 25vh; right: 25vw; }
 
 @media (max-width: 768px) {
     .link {
-        font-size: 18px;
+        font-size: 18px; 
     }
-    .skulls_dithered {
-        width: 50%; 
-    }
+
+    .top-center { top: 20vh; }
+    .bottom-center { bottom: 20vh; }
+    .top-left, .top-right { top: 30vh; }
+    .bottom-left, .bottom-right { bottom: 30vh; }
 }
 
 @media (max-width: 480px) {
     .link {
-        font-size: 14px;
+        font-size: 16px; 
     }
-    .skulls_dithered {
-        width: 60%; 
-    }
+
+    .top-center { top: 25vh; }
+    .bottom-center { bottom: 25vh; }
+    .top-left, .top-right { top: 35vh; }
+    .bottom-left, .bottom-right { bottom: 35vh; }
 }
-
-.copyright {
-    color: #FFFFFF;
-    font-size: 14px;
-    font-family: 'baskerville', sans-serif;
-    margin-top: -30px; 
-    position: relative;
-    left: 10%;
-}
-
-
