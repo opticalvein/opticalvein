@@ -22,69 +22,76 @@ body {
 }
 
 .container {
-    display: flex;          
-    justify-content: center; 
-    align-items: center;     
-    height: 500px;       
-    width: 100%;  
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 80vh; 
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.links {
+.skulls_dithered {
+    width: 40%; 
+    max-width: 400px; 
+}
+
+.button-container {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
-        }
+    display: grid;
+    grid-template-areas:
+        ". . top-center . ."
+        ". top-left . top-right ."
+        "bottom-left . . . bottom-right"
+        ". . bottom-center . .";
+    place-items: center;
+}
 
 .link {
     color: #FFFFFF;
     text-decoration: none;
-    margin: 10px;
-    font-weight: 300;
-    font-style: normal;
     font-family: 'baskerville', sans-serif;
     font-size: 24px;
-    position: absolute;
-        }
+    transition: text-decoration 0.3s ease;
+}
 
 .link:hover {
     text-decoration: underline;
-        }
+}
 
-.top-center { top: 15vh; left: 50vw; transform: translate(-50%, -50%); }
-.bottom-center { bottom: 15vh; left: 50vw; transform: translate(-50%, 50%); }
-.top-left { top: 25vh; left: 25vw; }
-.top-right { top: 25vh; right: 25vw; }
-.bottom-left { bottom: 25vh; left: 25vw; }
-.bottom-right { bottom: 25vh; right: 25vw; }
+.top-center { grid-area: top-center; }
+.top-left { grid-area: top-left; }
+.top-right { grid-area: top-right; }
+.bottom-left { grid-area: bottom-left; }
+.bottom-right { grid-area: bottom-right; }
+.bottom-center { grid-area: bottom-center; }
+
+@media (max-width: 768px) {
+    .link {
+        font-size: 18px;
+    }
+    .skull-image {
+        width: 50%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        font-size: 14px;
+    }
+    .skull-image {
+        width: 60%; 
+    }
+}
 
 .copyright {
     color: #FFFFFF;
     font-size: 14px;
     font-family: 'baskerville', sans-serif;
-    margin-top: -120px; 
-        }
-
-@media (max-width: 768px) {
-    .link {
-        font-size: 18px; 
-    }
-
-    .top-center { top: 20vh; }
-    .bottom-center { bottom: 20vh; }
-    .top-left, .top-right { top: 30vh; }
-    .bottom-left, .bottom-right { bottom: 30vh; }
+    margin-top: -30px; 
+    position: relative;
+    left: 10%;
 }
 
-@media (max-width: 480px) {
-    .link {
-        font-size: 16px; 
-    }
 
-    .top-center { top: 25vh; }
-    .bottom-center { bottom: 25vh; }
-    .top-left, .top-right { top: 35vh; }
-    .bottom-left, .bottom-right { bottom: 35vh; }
-}
