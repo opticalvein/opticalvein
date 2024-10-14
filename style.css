@@ -81,3 +81,12 @@ body {
     .top-left, .top-right { top: 35vh; }
     .bottom-left, .bottom-right { bottom: 35vh; }
 }
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'baskerville', sans-serif;
+    position: absolute; 
+    margin-top: -120px; 
+    left: 20px; 
+}
