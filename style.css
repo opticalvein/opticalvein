@@ -34,7 +34,7 @@ body {
 .container img {
     width: 600px;
     height: auto;
-    max-width: 100%; /* Scales down but retains 600px max width */
+    max-width: 50%; /* Scales down but retains 600px max width */
 }
 
 .links {
