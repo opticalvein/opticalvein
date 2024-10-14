@@ -1,4 +1,3 @@
-
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -6,100 +5,50 @@ body {
     margin: 0;
     height: 100vh;
     display: flex; 
-    flex-direction: column; 
     justify-content: center;
-}
-
-@font-face {
-    font-family: 'baskerville';
-    src: url('fonts/baskerville.ttf') format('truetype');
-}
-
-.no-right-click {
-    pointer-events: none; 
-    user-select: none;  
+    align-items: center;
 }
 
 .container {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 500px;
-   width: 100%;
-   flex-direction: column;
+    position: relative;
+    height: 60vh; /* Skull size scales with viewport */
+    width: 60vh;  /* Maintain square aspect ratio for skull */
 }
 
-/* Skull image stays 600px on large screens, scales down on smaller screens */
-.container img {
-    width: 600px;
+.skulls_dithered {
+    width: 100%; /* Skull image fully contained within its container */
     height: auto;
-    max-width: 50%; /* Scales down but retains 600px max width */
 }
 
 .links {
     position: absolute;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensures buttons are relative to skull container */
     height: 100%;
-    pointer-events: none; /* Keeps text static and not interactive */
 }
 
 .link {
+    position: absolute;
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'baskerville', serif;
-    font-size: 24px;
-    position: absolute;
-    margin: 0;
+    font-size: 1.5vw; /* Scales text based on viewport width */
 }
 
-.link:hover {
-    text-decoration: underline;
-}
-
-.top-center { 
-    top: 20vh; 
-    left: 50vw; 
-    transform: translate(-50%, -50%);
-}
-.bottom-center { 
-    bottom: 20vh; 
-    left: 50vw; 
-    transform: translate(-50%, 50%);
-}
-.top-left { 
-    top: 25vh; 
-    left: 30vw;
-    transform: translate(-50%, -50%);
-}
-.top-right { 
-    top: 25vh; 
-    right: 30vw; 
-    transform: translate(50%, -50%);
-}
-.bottom-left { 
-    bottom: 25vh; 
-    left: 30vw; 
-    transform: translate(-50%, 50%);
-}
-.bottom-right { 
-    bottom: 25vh; 
-    right: 30vw; 
-    transform: translate(50%, 50%);
-}
-
-/* Keep the font size constant across screen sizes */
-@media (max-width: 768px), (max-width: 480px) {
-    .link {
-        font-size: 24px; /* Maintain the same font size */
-    }
-}
+.top-center { top: 0; left: 50%; transform: translateX(-50%); }
+.bottom-center { bottom: 0; left: 50%; transform: translateX(-50%); }
+.top-left { top: 0; left: 0; }
+.top-right { top: 0; right: 0; }
+.bottom-left { bottom: 0; left: 0; }
+.bottom-right { bottom: 0; right: 0; }
 
 .copyright {
     color: #FFFFFF;
-    font-size: 14px;
-    font-family: 'baskerville', sans-serif;
-    position: relative; 
-    margin-top: -120px; 
-    text-align: center; 
+    font-size: 1vw; /* Scales with viewport */
+    position: absolute;
+    bottom: -4vw; /* Adjust distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
 }
