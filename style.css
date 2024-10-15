@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'baskerville', sans-serif;
+    font-family: 'baskerville', serif;
 }
 
 @font-face {
@@ -30,7 +30,7 @@ body {
     width: 100%;
 }
 
-/* Adjusted skull image properties */
+/* Skull image properties */
 .container img {
     width: 30vw; /* Skull scales with viewport width */
     height: auto;
@@ -38,6 +38,7 @@ body {
     z-index: 0; /* Skull stays behind the buttons */
 }
 
+/* Links container */
 .links {
     position: absolute;
     width: 100%;
@@ -51,10 +52,10 @@ body {
 .link {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 2vw; /* Font size scales with viewport width */
+    font-size: 1.5rem; /* Set a smaller, fixed font size */
     font-family: 'baskerville', serif;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center links on their own position */
 }
 
 /* Hover effect */
@@ -67,9 +68,10 @@ body {
     color: #FFFFFF;
     font-size: 14px;
     font-family: 'baskerville', sans-serif;
-    position: relative;
-    margin-top: -50px; /* Position just below the skull */
-    z-index: 1; /* Ensure it's above the links */
+    position: absolute;
+    top: 80%; /* Position just below the skull */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the copyright */
 }
 
 /* Position the links in a circular pattern */
@@ -85,22 +87,22 @@ body {
 
 .top-left { 
     top: 30%; 
-    left: 20%;
+    left: 25%;
 }
 
 .top-right { 
     top: 30%; 
-    right: 20%;
+    right: 25%;
 }
 
 .bottom-left { 
     bottom: 30%; 
-    left: 20%;
+    left: 25%;
 }
 
 .bottom-right { 
     bottom: 30%; 
-    right: 20%;
+    right: 25%;
 }
 
 /* Media query for responsive adjustments */
@@ -110,7 +112,7 @@ body {
     }
 
     .link {
-        font-size: 3vw; /* Larger font size for tablets */
+        font-size: 1.25rem; /* Smaller font size for tablets */
     }
 
     /* Adjust link positions for tighter fit */
@@ -124,22 +126,22 @@ body {
 
     .top-left { 
         top: 25%; 
-        left: 15%;
+        left: 20%;
     }
 
     .top-right { 
         top: 25%; 
-        right: 15%;
+        right: 20%;
     }
 
     .bottom-left { 
         bottom: 25%; 
-        left: 15%;
+        left: 20%;
     }
 
     .bottom-right { 
         bottom: 25%; 
-        right: 15%;
+        right: 20%;
     }
 }
 
@@ -150,7 +152,7 @@ body {
     }
 
     .link {
-        font-size: 4vw; /* Increase font size for mobile */
+        font-size: 1rem; /* Increase font size for mobile */
     }
 
     /* Further tighten the positions */
@@ -164,21 +166,21 @@ body {
 
     .top-left { 
         top: 35%; 
-        left: 10%;
+        left: 15%;
     }
 
     .top-right { 
         top: 35%; 
-        right: 10%;
+        right: 15%;
     }
 
     .bottom-left { 
         bottom: 35%; 
-        left: 10%;
+        left: 15%;
     }
 
     .bottom-right { 
         bottom: 35%; 
-        right: 10%;
+        right: 15%;
     }
 }
