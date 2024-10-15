@@ -1,14 +1,12 @@
-/* General styles */
 body {
     background-color: #000000;
     color: #FFFFFF;
     text-align: center;
     margin: 0;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
     justify-content: center;
-    font-family: 'baskerville', serif;
 }
 
 @font-face {
@@ -17,105 +15,86 @@ body {
 }
 
 .no-right-click {
-    pointer-events: none;
-    user-select: none;
+    pointer-events: none; 
+    user-select: none;  
 }
 
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh; /* Adjust this based on your design */
-    width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   width: 100%;
+   flex-direction: column;
 }
 
-/* Skull image properties */
 .container img {
-    width: 30vw; /* Skull scales with viewport width */
+    width: 600px;
     height: auto;
-    max-width: 50%;
-    z-index: 0; /* Skull stays behind the buttons */
+    max-width: 50%; 
 }
 
-/* Links container */
 .links {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the links */
 }
 
-/* Link styles */
 .link {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.5rem; /* Set a smaller, fixed font size */
-    font-family: 'baskerville', serif;
+    font-family: 'baskerville', sans-serif;
+    font-size: 24px;
     position: absolute;
-    transform: translate(-50%, -50%); /* Center links on their own position */
+    margin: 0;
+    pointer-events: auto;
 }
 
-/* Hover effect */
 .link:hover {
     text-decoration: underline;
 }
 
-/* Copyright positioning */
-.copyright {
-    color: #FFFFFF;
-    font-size: 14px;
-    font-family: 'baskerville', sans-serif;
-    position: absolute;
-    top: 80%; /* Position just below the skull */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the copyright */
-}
-
-/* Position the links in a circular pattern */
 .top-center { 
-    top: 10%; 
-    left: 50%;
+    top: 20vh; 
+    left: 50vw; 
+    transform: translate(-50%, -50%);
 }
-
 .bottom-center { 
-    bottom: 10%; 
-    left: 50%;
+    bottom: 20vh; 
+    left: 50vw; 
+    transform: translate(-50%, 50%);
 }
-
 .top-left { 
-    top: 30%; 
-    left: 25%;
+    top: 25vh; 
+    left: 30vw;
+    transform: translate(-50%, -50%);
 }
-
 .top-right { 
-    top: 30%; 
-    right: 25%;
+    top: 25vh; 
+    right: 30vw; 
+    transform: translate(50%, -50%);
 }
-
 .bottom-left { 
-    bottom: 30%; 
-    left: 25%;
+    bottom: 25vh; 
+    left: 30vw; 
+    transform: translate(-50%, 50%);
 }
-
 .bottom-right { 
-    bottom: 30%; 
-    right: 25%;
+    bottom: 25vh; 
+    right: 30vw; 
+    transform: translate(50%, 50%);
 }
 
-/* Media query for responsive adjustments */
 @media (max-width: 768px) {
     .container img {
-        width: 40vw; /* Adjust for tablet screens */
+        width: 40vw; 
     }
 
     .link {
-        font-size: 1.25rem; /* Smaller font size for tablets */
+        font-size: 1.25rem; 
     }
 
-    /* Adjust link positions for tighter fit */
     .top-center { 
         top: 15%; 
     }
@@ -145,17 +124,15 @@ body {
     }
 }
 
-/* Media query for mobile devices */
 @media (max-width: 480px) {
     .container img {
-        width: 60vw; /* Adjust for mobile screens */
+        width: 60vw;
     }
 
     .link {
-        font-size: 1rem; /* Increase font size for mobile */
+        font-size: 1rem; 
     }
 
-    /* Further tighten the positions */
     .top-center { 
         top: 20%; 
     }
@@ -183,4 +160,13 @@ body {
         bottom: 35%; 
         right: 15%;
     }
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'baskerville', sans-serif;
+    position: relative; 
+    margin-top: -120px; 
+    text-align: center; 
 }
