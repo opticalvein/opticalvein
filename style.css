@@ -29,18 +29,17 @@ body {
    flex-direction: column;
 }
 
-/* Skull image stays 600px on large screens, scales down on smaller screens */
+
 .container img {
     width: 600px;
     height: auto;
-    max-width: 50%; /* Scales down but retains 600px max width */
+    max-width: 50%; 
 }
 
 .links {
     position: absolute;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Keeps text static and not interactive */
 }
 
 .link {
@@ -50,6 +49,7 @@ body {
     font-size: 24px;
     position: absolute;
     margin: 0;
+    pointer-events: auto;
 }
 
 .link:hover {
