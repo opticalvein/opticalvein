@@ -44,7 +44,7 @@ body {
 .link {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: 'baskerville', serif;
+    font-family: 'baskerville', sans-serif;
     font-size: 24px;
     position: absolute;
     margin: 0;
@@ -86,9 +86,46 @@ body {
     transform: translate(50%, 50%);
 }
 
-@media (max-width: 768px), (max-width: 480px) {
+@media (max-width: 768px) {
+    .container img {
+        max-width: 80%;  /* Make image smaller for tablets */
+    }
+
     .link {
-        font-size: 24px; 
+        font-size: 18px;  /* Reduce font size for links */
+    }
+}
+
+/* Media query for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .container img {
+        max-width: 90%;  /* Further reduce image size for small screens */
+    }
+
+    .link {
+        font-size: 16px;  /* Smaller font for mobile */
+    }
+
+    /* Adjust position of links for smaller screens */
+    .top-center, .bottom-center, .top-left, .top-right, .bottom-left, .bottom-right {
+        left: 50%; /* Center the links horizontally */
+        transform: translateX(-50%);  /* Only translate horizontally */
+    }
+
+    .top-center {
+        top: 10vh;
+    }
+
+    .bottom-center {
+        bottom: 10vh;
+    }
+
+    .top-left, .top-right {
+        top: 15vh;
+    }
+
+    .bottom-left, .bottom-right {
+        bottom: 15vh;
     }
 }
 
