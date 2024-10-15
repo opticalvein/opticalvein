@@ -56,36 +56,49 @@ body {
 }
 
 .top-center { 
-    top: 20vh; 
+    top: 8vh; 
     left: 50vw; 
     transform: translate(-50%, -50%);
 }
 .bottom-center { 
-    bottom: 20vh; 
+    bottom: 8vh; 
     left: 50vw; 
     transform: translate(-50%, 50%);
 }
 .top-left { 
-    top: 25vh; 
-    left: 30vw;
+    top: 20vh; 
+    left: 20vw;
     transform: translate(-50%, -50%);
 }
 .top-right { 
-    top: 25vh; 
-    right: 30vw; 
+    top: 20vh; 
+    right: 20vw; 
     transform: translate(50%, -50%);
 }
 .bottom-left { 
-    bottom: 25vh; 
-    left: 30vw; 
+    bottom: 20vh; 
+    left: 20vw; 
     transform: translate(-50%, 50%);
 }
 .bottom-right { 
-    bottom: 25vh; 
-    right: 30vw; 
+    bottom: 20vh; 
+    right: 20vw; 
     transform: translate(50%, 50%);
 }
 
+.left-side {
+    top: 50%;
+    left: 8vw;
+    transform: translate(-50%, -50%);
+}
+
+.right-side {
+    top: 50%;
+    right: 8vw;
+    transform: translate(50%, -50%);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .container img {
         width: 40vw; 
@@ -121,6 +134,14 @@ body {
     .bottom-right { 
         bottom: 25%; 
         right: 20%;
+    }
+
+    .left-side {
+        left: 12%;
+    }
+
+    .right-side {
+        right: 12%;
     }
 }
 
@@ -159,5 +180,13 @@ body {
     .bottom-right { 
         bottom: 35%; 
         right: 15%;
+    }
+
+    .left-side {
+        left: 10%;
+    }
+
+    .right-side {
+        right: 10%;
     }
 }
