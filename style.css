@@ -2,13 +2,12 @@
 body {
     background-color: #000000;
     color: #FFFFFF;
+    text-align: center;
     margin: 0;
-    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
 
 @font-face {
@@ -16,36 +15,45 @@ body {
     src: url('fonts/baskerville.ttf') format('truetype');
 }
 
-/* Skull container */
+.no-right-click {
+    pointer-events: none; 
+    user-select: none;
+}
+
+/* Center container for the skull and links */
 .container {
-   position: relative;
-   width: 50vh; /* Proportional to the viewport height */
-   height: 50vh;
+    position: relative;
+    width: 50vh;   /* Use viewport-relative units for a consistent size */
+    height: 50vh;  /* The container will stay proportional to the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Skull image, maintaining its size proportional to the viewport */
 .container img {
-    width: 100%;  /* Skull scales proportionally */
-    height: 100%;
-    object-fit: contain; /* Ensures no distortion */
-}
-
-/* Links container */
-.links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 100%;
     height: 100%;
-    pointer-events: auto;
-    transform: translate(-50%, -50%); /* Keep links centered */
+    object-fit: contain;
 }
 
-/* Styling for individual links */
+/* Links positioned around the skull in a circular pattern */
+.links {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .link {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'baskerville', serif;
-    font-size: 2.5vh;  /* Scales proportionally with viewport */
+    font-size: 2vh;  /* Proportional to viewport height */
     position: absolute;
     pointer-events: auto;
 }
@@ -54,54 +62,55 @@ body {
     text-decoration: underline;
 }
 
-/* Positioning links around the skull in a circular pattern */
+/* Position links in a circular pattern around the skull */
 .top-center { 
-    top: 10%; 
-    left: 50%; 
+    top: 0;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 .top-left { 
-    top: 30%; 
-    left: 15%; 
+    top: 15%;
+    left: 15%;
     transform: translate(-50%, -50%);
 }
 .top-right { 
-    top: 30%; 
-    right: 15%; 
+    top: 15%;
+    right: 15%;
     transform: translate(50%, -50%);
 }
 .bottom-center { 
-    bottom: 10%; 
-    left: 50%; 
+    bottom: 0;
+    left: 50%;
     transform: translate(-50%, 50%);
 }
 .bottom-left { 
-    bottom: 30%; 
-    left: 15%; 
+    bottom: 15%;
+    left: 15%;
     transform: translate(-50%, 50%);
 }
 .bottom-right { 
-    bottom: 30%; 
-    right: 15%; 
+    bottom: 15%;
+    right: 15%;
     transform: translate(50%, 50%);
 }
 
-/* Keep the font size proportional on smaller screens */
-@media (max-width: 768px), (max-width: 480px) {
-    .link {
-        font-size: 2vh; /* Reduce font size on smaller screens */
-    }
-}
-
-/* Copyright text */
+/* Copyright text, centered under the image */
 .copyright {
     color: #FFFFFF;
-    font-size: 1.5vh;
+    font-size: 1.5vh;  /* Proportional to viewport height */
     font-family: 'baskerville', sans-serif;
-    position: absolute; 
-    bottom: -5%; /* Slightly below the skull */
+    position: absolute;
+    bottom: -4vh;  /* Positioned below the skull */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px), (max-width: 480px) {
+    .link {
+        font-size: 1.5vh; /* Adjust text size for smaller screens */
+    }
+}
+
 
