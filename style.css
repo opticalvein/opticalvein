@@ -1,12 +1,14 @@
+/* General body styling */
 body {
     background-color: #000000;
     color: #FFFFFF;
-    text-align: center;
     margin: 0;
-    height: 100vh;
-    display: flex; 
-    flex-direction: column; 
+    padding: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 @font-face {
@@ -14,43 +16,37 @@ body {
     src: url('fonts/baskerville.ttf') format('truetype');
 }
 
-.no-right-click {
-    pointer-events: none; 
-    user-select: none;  
-}
-
+/* Skull container */
 .container {
    position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 80vh; 
-   width: 80vw;  
-   max-width: 100%; 
-   max-height: 100%; 
-   flex-direction: column;
+   width: 50vh; /* Proportional to the viewport height */
+   height: 50vh;
 }
 
 .container img {
-    width: 50vh; 
-    height: auto; 
-    max-width: 50vw; 
+    width: 100%;  /* Skull scales proportionally */
+    height: 100%;
+    object-fit: contain; /* Ensures no distortion */
 }
 
+/* Links container */
 .links {
     position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     pointer-events: auto;
+    transform: translate(-50%, -50%); /* Keep links centered */
 }
 
+/* Styling for individual links */
 .link {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'baskerville', serif;
-    font-size: 24px;
+    font-size: 2.5vh;  /* Scales proportionally with viewport */
     position: absolute;
-    margin: 0;
     pointer-events: auto;
 }
 
@@ -58,51 +54,54 @@ body {
     text-decoration: underline;
 }
 
+/* Positioning links around the skull in a circular pattern */
 .top-center { 
-    top: 15%; 
+    top: 10%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 }
 .top-left { 
     top: 30%; 
-    left: 20%; 
+    left: 15%; 
     transform: translate(-50%, -50%);
 }
 .top-right { 
     top: 30%; 
-    right: 20%; 
+    right: 15%; 
     transform: translate(50%, -50%);
 }
 .bottom-center { 
-    bottom: 15%; 
+    bottom: 10%; 
     left: 50%; 
     transform: translate(-50%, 50%);
 }
 .bottom-left { 
     bottom: 30%; 
-    left: 20%; 
+    left: 15%; 
     transform: translate(-50%, 50%);
 }
 .bottom-right { 
     bottom: 30%; 
-    right: 20%; 
+    right: 15%; 
     transform: translate(50%, 50%);
 }
 
+/* Keep the font size proportional on smaller screens */
 @media (max-width: 768px), (max-width: 480px) {
     .link {
-        font-size: 18px;
-    }
-    .container img {
-        width: 40vh; 
+        font-size: 2vh; /* Reduce font size on smaller screens */
     }
 }
 
+/* Copyright text */
 .copyright {
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 1.5vh;
     font-family: 'baskerville', sans-serif;
-    position: relative; 
-    margin-top: -120px; 
-    text-align: center; 
+    position: absolute; 
+    bottom: -5%; /* Slightly below the skull */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
+
