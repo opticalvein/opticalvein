@@ -4,10 +4,10 @@ body {
     color: #FFFFFF;
     text-align: center;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 @font-face {
@@ -17,100 +17,97 @@ body {
 
 .no-right-click {
     pointer-events: none; 
-    user-select: none;
+    user-select: none;  
 }
 
-/* Center container for the skull and links */
+/* Container for the skull and links */
 .container {
     position: relative;
-    width: 50vh;   /* Keeps the container proportional */
-    height: 50vh;
+    width: 50vh;   /* Keep skull and links container proportional */
+    height: 50vh;  
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-/* Skull image, keeping it proportional */
+/* Skull image, keep it proportional to the container */
 .container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-/* Links positioned around the skull in a tighter circular pattern */
+/* Links positioned tightly around the skull */
 .links {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    pointer-events: auto; /* Enable clicking */
 }
 
 .link {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'baskerville', serif;
-    font-size: 2vh;  /* Proportional font size */
+    font-size: 2vh; /* Scales with viewport height */
     position: absolute;
     pointer-events: auto;
+    transform-origin: center center;  /* Rotate links around the skull */
 }
 
 .link:hover {
     text-decoration: underline;
 }
 
-/* Position links in a closer circular pattern around the skull */
-.top-center { 
-    top: 5%;  /* Bring the links closer to the skull */
+/* Precise link positions encircling the skull tightly */
+.top-center {
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.top-left { 
-    top: 20%; 
-    left: 25%; 
+.top-left {
+    top: 22%;
+    left: 20%;
     transform: translate(-50%, -50%);
 }
-.top-right { 
-    top: 20%; 
-    right: 25%; 
+.top-right {
+    top: 22%;
+    right: 20%;
     transform: translate(50%, -50%);
 }
-.bottom-center { 
-    bottom: 5%; 
+.bottom-center {
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, 50%);
 }
-.bottom-left { 
-    bottom: 20%; 
-    left: 25%; 
+.bottom-left {
+    bottom: 22%;
+    left: 20%;
     transform: translate(-50%, 50%);
 }
-.bottom-right { 
-    bottom: 20%; 
-    right: 25%; 
+.bottom-right {
+    bottom: 22%;
+    right: 20%;
     transform: translate(50%, 50%);
 }
 
-/* Copyright text, placed directly under the skull */
+/* Copyright directly below the skull */
 .copyright {
     color: #FFFFFF;
-    font-size: 1.5vh;  /* Proportional font size */
+    font-size: 1.5vh;
     font-family: 'baskerville', sans-serif;
     position: relative;
-    margin-top: 1vh;  /* Add a small margin directly under the skull */
+    top: 2vh; /* Position just below the skull */
     text-align: center;
 }
 
-/* Responsive styling for smaller screens */
+/* Adjustments for smaller screens */
 @media (max-width: 768px), (max-width: 480px) {
     .link {
-        font-size: 1.5vh; /* Adjust font size for smaller screens */
+        font-size: 1.5vh; /* Smaller font for mobile */
     }
 }
+
 
 
 
