@@ -52,7 +52,7 @@ body {
     max-width: 40%; 
     max-height: 40%; 
     justify-content: center;
-    top: 80%;
+    top: -80%;
 }
 
 .left-links, .middle-links, .right-links {
