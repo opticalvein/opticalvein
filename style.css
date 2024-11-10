@@ -44,16 +44,18 @@ body {
 
 .frames {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-.skulls {
-    position: static;
-    max-width: 40%; 
-    max-height: 40%; 
-    top: 50%; 
-    left: 45%; 
-    justify-content: center;
+skulls {
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    width: 80%;  
+    height: 80%; 
+    object-fit: contain;
+
 }
 
 .left-links, .middle-links, .right-links {
