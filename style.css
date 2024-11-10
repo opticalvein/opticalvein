@@ -16,17 +16,32 @@ body {
     src: url('fonts/baskerville.ttf') format('truetype');
 }
 
-.image-row {
+.center-frames {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    gap: 30px; 
+    gap: 2%; 
     margin: 20px 0; 
 }
 
 .frames {
-    width: 200px; 
+    width: 30%; 
+    max-width: 200px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .frames {
+        width: 45%; 
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .frames {
+        width: 80%; 
+        max-width: 120px;
+    }
 }
 
 .no-right-click {
