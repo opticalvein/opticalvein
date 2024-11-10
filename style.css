@@ -86,13 +86,13 @@ body {
 
 @media (max-width: 768px) {
     .link {
-        font-size: 3vw;
+        font-size: calc(2vw + 6px);
     }
 }
 
 @media (max-width: 480px) {
     .link {
-        font-size: 5vw;
+        font-size: calc(3vw + 5px);
     }
 }
 
