@@ -2,7 +2,7 @@ body {
     background-image: url('images/background.png'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: center center; 
+    background-position: center; 
     text-align: center;
     margin: 0;
     height: 100vh;
@@ -25,7 +25,7 @@ body {
 }
 
 .frame-container {
-    position: relative;
+    position: static;
     width: 30%; 
     max-width: 500px;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .left-links, .middle-links, .right-links {
-    position: absolute;
+    position: static;
     top: 50%; 
     left: 42%; 
     display: flex;
@@ -100,7 +100,7 @@ body {
 }
 
 .links {
-    position: absolute;
+    position: static;
     width: 100%;
     height: 100%;
 }
@@ -110,7 +110,7 @@ body {
     text-decoration: none;
     font-family: 'baskerville', sans-serif;
     font-size: 24px;
-    position: absolute;
+    position: static;
     margin: 0;
     pointer-events: auto;
 }
