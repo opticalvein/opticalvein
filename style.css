@@ -61,17 +61,17 @@ body {
 
 .left-links {
     margin-top: -30%;
-    margin-right: 10px
+    margin-right: -10px
 }
 
 .middle-links {
     margin-top: -30%;
-    margin-right: 10px;
+    margin-right: -10px;
 }
 
 .right-links {
     margin-top: -20%;
-    margin-right: 10px;
+    margin-right: -10px;
 }
 
 .link {
