@@ -45,6 +45,14 @@ body {
 .frames {
     width: 100%;
     height: auto;
+    object-fit: contain;
+}
+
+.skulls {
+    position: absolute;
+    max-width: 80%; 
+    max-height: 80%; 
+    object-fit: contain;
 }
 
 .left-links, .middle-links, .right-links {
