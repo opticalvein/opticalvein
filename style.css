@@ -22,6 +22,7 @@ body {
     align-items: flex-start;
     gap: 2%;
     margin-top: 20px;
+    margin-right: -20px
 }
 
 .frame-container {
@@ -61,17 +62,14 @@ body {
 
 .left-links {
     margin-top: -30%;
-    margin-right: -20px
 }
 
 .middle-links {
     margin-top: -30%;
-    margin-right: -20px;
 }
 
 .right-links {
     margin-top: -20%;
-    margin-right: -20px;
 }
 
 .link {
