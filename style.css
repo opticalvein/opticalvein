@@ -52,7 +52,7 @@ body {
     max-width: 40%; 
     max-height: 40%; 
     justify-content: center;
-    transform: translate(-50%, -50%);
+    margin-top: -500px;
 }
 
 .left-links, .middle-links, .right-links {
