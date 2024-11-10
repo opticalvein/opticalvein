@@ -45,7 +45,6 @@ body {
 .frames {
     width: 100%;
     height: auto;
-    object-fit: contain;
 }
 
 .skulls {
@@ -53,7 +52,7 @@ body {
     max-width: 40%; 
     max-height: 40%; 
     justify-content: center;
-    bottom: 50%;
+    margin-top: -200px;
 }
 
 .left-links, .middle-links, .right-links {
