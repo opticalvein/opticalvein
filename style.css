@@ -11,7 +11,6 @@ body {
     justify-content: center;
 }
 
-
 @font-face {
     font-family: 'baskerville';
     src: url('fonts/baskerville.ttf') format('truetype');
@@ -20,22 +19,6 @@ body {
 .no-right-click {
     pointer-events: none; 
     user-select: none;  
-}
-
-.container {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 500px;
-   width: 100%;
-   flex-direction: column;
-}
-
-.container img {
-    width: 600px;
-    height: auto;
-    max-width: 50%; 
 }
 
 .links {
@@ -56,139 +39,4 @@ body {
 
 .link:hover {
     text-decoration: underline;
-}
-
-.top-center { 
-    top: 8vh; 
-    left: 50vw; 
-    transform: translate(-50%, -50%);
-}
-.bottom-center { 
-    bottom: 8vh; 
-    left: 50vw; 
-    transform: translate(-50%, 50%);
-}
-.top-left { 
-    top: 20vh; 
-    left: 20vw;
-    transform: translate(-50%, -50%);
-}
-.top-right { 
-    top: 20vh; 
-    right: 20vw; 
-    transform: translate(50%, -50%);
-}
-.bottom-left { 
-    bottom: 20vh; 
-    left: 20vw; 
-    transform: translate(-50%, 50%);
-}
-.bottom-right { 
-    bottom: 20vh; 
-    right: 20vw; 
-    transform: translate(50%, 50%);
-}
-
-.left-side {
-    top: 50%;
-    left: 8vw;
-    transform: translate(-50%, -50%);
-}
-
-.right-side {
-    top: 50%;
-    right: 8vw;
-    transform: translate(50%, -50%);
-}
-
-@media (max-width: 768px) {
-    .container img {
-        width: 40vw; 
-    }
-
-    .link {
-        font-size: 1.25rem; 
-    }
-
-    .top-center { 
-        top: 15%; 
-    }
-
-    .bottom-center { 
-        bottom: 15%; 
-    }
-
-    .top-left { 
-        top: 25%; 
-        left: 20%;
-    }
-
-    .top-right { 
-        top: 25%; 
-        right: 20%;
-    }
-
-    .bottom-left { 
-        bottom: 25%; 
-        left: 20%;
-    }
-
-    .bottom-right { 
-        bottom: 25%; 
-        right: 20%;
-    }
-
-    .left-side {
-        left: 12%;
-    }
-
-    .right-side {
-        right: 12%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container img {
-        width: 60vw;
-    }
-
-    .link {
-        font-size: 1rem; 
-    }
-
-    .top-center { 
-        top: 20%; 
-    }
-
-    .bottom-center { 
-        bottom: 20%; 
-    }
-
-    .top-left { 
-        top: 35%; 
-        left: 15%;
-    }
-
-    .top-right { 
-        top: 35%; 
-        right: 15%;
-    }
-
-    .bottom-left { 
-        bottom: 35%; 
-        left: 15%;
-    }
-
-    .bottom-right { 
-        bottom: 35%; 
-        right: 15%;
-    }
-
-    .left-side {
-        left: 10%;
-    }
-
-    .right-side {
-        right: 10%;
-    }
 }
