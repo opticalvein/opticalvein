@@ -58,25 +58,15 @@ body {
 }
 
 .left-links {
-    margin-top: -30%;
+    margin: 0;
 }
 
 .middle-links {
-    margin-top: -30%;
+    margin: 0;
 }
 
 .right-links {
-    margin-top: -20%;
-}
-
-.link {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'baskerville', sans-serif;
-    font-size: 1.5vw;
-    max-width: 90%; 
-    text-align: center;
-    margin-botton: 50px;
+    margin: 0;
 }
 
 .link:hover {
@@ -110,7 +100,8 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'baskerville', sans-serif;
-    font-size: 24px;
+    font-size: 1.5vw;
+    max-width: 90%; 
     position: static;
     margin: 0;
     pointer-events: auto;
