@@ -26,15 +26,12 @@ body {
 
 .frame-container {
     position: relative;
-    width: 28%;
-    max-width: 300px;
+    width: 30%;
+    max-width: 500px;
     text-align: center;
-    padding: 10px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px; 
-    overflow: hidden;
 }
 
 @media (max-width: 768px) {
