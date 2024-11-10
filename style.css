@@ -45,17 +45,6 @@ body {
 .frames {
     width: 100%;
     height: auto;
-    object-fit: contain;
-}
-
-skulls {
-    position: static;  
-    top: 50%;  
-    left: 50%;  
-    transform: translate(-50%, -50%);  
-    width: 40%;  
-    height: auto;
-
 }
 
 .left-links, .middle-links, .right-links {
