@@ -50,10 +50,10 @@ body {
 .left-links, .middle-links, .right-links {
     position: static;
     top: 50%; 
-    left: 42%; 
+    left: 45%; 
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 20px; 
     padding-top: 10px;
 }
 
@@ -76,6 +76,7 @@ body {
     font-size: 1.5vw;
     max-width: 90%; 
     text-align: center;
+    margin-botton: 50px;
 }
 
 .link:hover {
