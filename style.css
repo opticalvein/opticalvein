@@ -164,7 +164,7 @@ body {
 /* forbidden page */
 
 .forbidden-page {
-    background-image: url('background_2.png'); 
+    background-image: url('images/background_2.png'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -200,7 +200,7 @@ body {
     width: 200px; 
     height: auto;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: filter 0.3s ease;
 }
 
 .back-button:hover {
