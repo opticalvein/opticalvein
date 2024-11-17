@@ -161,6 +161,43 @@ body {
     filter: invert(100%); 
 }
 
+/* forbidden page */
 
+.forbidden-page {
+    background-image: url('background_2.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.forbidden-container {
+    color: white; 
+    text-align: center; 
+    font-family: 'baskerville';
+    font-size: 24px;
+}
+
+.back-button-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.back-button img {
+    width: 200px; 
+    height: auto; 
+    cursor: pointer; 
+    transition: filter 0.3s ease; 
+}
+
+.back-button img:hover {
+    filter: invert(100%); 
+}
 
 
