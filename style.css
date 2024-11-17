@@ -179,25 +179,31 @@ body {
 }
 
 .forbidden-container {
-    color: white; 
-    text-align: center; 
-    font-family: 'baskerville';
-    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
 }
 
-.back-button-container {
-    text-align: center; 
-    margin-top: 20px; 
+.forbidden-container h1 {
+    font-size: 5em;
+    margin: 0;
+    color: #ffffff; 
 }
 
-.back-button img {
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-button {
     width: 200px; 
-    height: auto; 
-    cursor: pointer; 
-    transition: filter 0.3s ease; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.back-button img:hover {
+.back-button:hover {
     filter: invert(100%); 
 }
 
