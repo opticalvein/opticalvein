@@ -133,6 +133,7 @@ body {
 @media (max-width: 500px) {
     .changelog-box {
         width: 90%; 
+        aspect-ratio: 3 / 5;
         max-width: none; 
     }
 }
