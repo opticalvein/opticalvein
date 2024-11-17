@@ -193,6 +193,13 @@ body {
     white-space: nowrap;  
 }
 
+.gate-image {
+    width: 80%; 
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px; 
+}
+
 .back-home {
     display: inline-block;
     margin-top: 20px;
