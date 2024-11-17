@@ -1,3 +1,5 @@
+/* index page */
+
 body {
     background-image: url('images/background.png'); 
     background-size: cover; 
@@ -126,5 +128,12 @@ body {
     font-size: 14px;
     margin: 0 auto;
 }
+
+.changelog-header {
+    color: white; 
+    text-align: center; 
+    font-family: 'baskerville';
+}
+
 
 
