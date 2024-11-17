@@ -132,7 +132,8 @@ body {
 
 @media (max-width: 500px) {
     .changelog-box {
-        width: 90%; 
+        width: 70%; 
+        font-family: 'baskerville';
         aspect-ratio: 3 / 5;
         max-width: none; 
     }
