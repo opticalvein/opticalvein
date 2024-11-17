@@ -186,9 +186,11 @@ body {
 }
 
 .forbidden-container h1 {
-    font-size: 5em;
+    font-size: 2em;
     margin: 0;
     color: #ffffff; 
+    text-align: center; 
+    white-space: nowrap;  
 }
 
 .back-home {
