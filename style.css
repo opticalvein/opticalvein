@@ -149,7 +149,7 @@ body {
 }
 
 .back-button img {
-    width: 40px; 
+    width: 200px; 
     height: auto; 
     cursor: pointer; 
     transition: filter 0.3s ease; 
