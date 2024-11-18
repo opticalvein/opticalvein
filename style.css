@@ -199,7 +199,7 @@ body {
 }
 
 .gate-image {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     align-items: center;
