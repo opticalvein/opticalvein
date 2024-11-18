@@ -187,7 +187,7 @@ body {
 }
 
 .forbidden-container h1 {
-    font-size: 24px;
+    font-size: 2vw;
     font-family: 'baskerville';
     margin: 0;
     padding: 0;
@@ -196,15 +196,18 @@ body {
     white-space: nowrap;  
     letter-spacing: 2px;
     text-transform: uppercase;
-    z-index: 2;
 }
 
 .gate-image {
+    position: abosolute;
+    top: 0%;
+    align-items: center;
     width: 80%; 
     height: auto;
     max-width: 500px;      
     width: 100%;      
     margin-bottom: 20px; 
+    
 }
 
 .back-home {
