@@ -187,7 +187,7 @@ body {
 }
 
 .forbidden-container h1 {
-    font-size: 2vw;
+    font-size: 5vw;
     font-family: 'baskerville';
     margin: 0;
     padding: 0;
@@ -203,7 +203,7 @@ body {
     top: 0;
     left: 0;
     align-items: center;
-    width: 100%; 
+    width: 100vh; 
     height: auto;
     max-width: 500px;           
     margin-bottom: 20px; 
