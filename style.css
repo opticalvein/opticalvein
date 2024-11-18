@@ -200,12 +200,20 @@ body {
 
 .gate-image {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vh; 
+    top: 10%;
+    align-items: center;
+    width: 80%; 
     height: auto;
-    max-width: 500px;           
+    max-width: 1000px;           
     margin-bottom: 20px; 
+}
+
+        @media (max-width: 500px) {
+    .gate-image {
+        width: 70%; 
+        height: auto;
+        max-width: none; 
+    }
 }
 
 .back-home {
