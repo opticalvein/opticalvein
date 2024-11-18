@@ -200,12 +200,11 @@ body {
 }
 
 .gate-image {
-    position: absolute;  
-    top: 0;         
-    left: 0;
+    width: 80%; 
+    height: auto;
+    max-width: 500px;      
     width: 100%;      
-    height: auto;     
-    z-index: -1;  
+    margin-bottom: 20px; 
 }
 
 .back-home {
@@ -223,5 +222,3 @@ body {
 .back-button:hover {
     filter: invert(100%); 
 }
-
-
