@@ -201,7 +201,7 @@ body {
 .gate-image {
     position: absolute;
     top: 0;
-    align-items: center;
+    left: 0;
     width: 100vh; 
     height: auto;
     max-width: 500px;           
