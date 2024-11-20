@@ -45,7 +45,7 @@ body {
 }
 
 .frames {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -92,7 +92,7 @@ body {
     text-decoration: none;
     font-family: 'baskerville', sans-serif;
     font-size: 2vw;
-    max-width: 80%; 
+    max-width: 100%; 
     position: static;
     margin: 0;
     pointer-events: auto;
