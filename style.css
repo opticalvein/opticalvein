@@ -59,6 +59,7 @@ body {
     gap: 20px; 
     padding-top: 10px;
     margin-botton: 50px;
+    align-items: center;
 }
 
 .no-right-click {
@@ -70,7 +71,6 @@ body {
     position: static;
     width: 100%;
     height: auto;
-    align-items: center;
 }
 
 .link {
