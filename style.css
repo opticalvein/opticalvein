@@ -45,7 +45,7 @@ body {
 }
 
 .frames {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -77,13 +77,13 @@ body {
 
 @media (max-width: 768px) {
     .link {
-        font-size: calc(2vw + 6px);
+        font-size: calc(4vw + 6px);
     }
 }
 
 @media (max-width: 480px) {
     .link {
-        font-size: calc(3vw + 5px);
+        font-size: calc(3vw + 6px);
     }
 }
 
