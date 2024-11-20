@@ -76,7 +76,7 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'baskerville';
-    font-size: clamp(1rem, 2vw, 1.5rem); 
+    font-size: clamp(1rem, 2vw, 2rem); 
     max-width: 100%; 
     position: static;
     margin: 0;
