@@ -168,13 +168,11 @@ body {
 
 .forbidden-container h1 {
     font-size: 4vw;
-    max-width: 600px;
+    text-align: center;
     font-family: 'baskerville';
     color: #ffffff; 
     white-space: nowrap;  
     letter-spacing: 5px;
-    align-items: center;
-    margin: 0;
 }
 
 .back-home {
