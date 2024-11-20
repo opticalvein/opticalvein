@@ -167,8 +167,8 @@ body {
 }
 
 .forbidden-container h1 {
-    font-size: 4vw;
-    text-align: center;
+    font-size: clamp(2rem, 2vw, 3rem); 
+    right: 0;
     font-family: 'baskerville';
     color: #ffffff; 
     white-space: nowrap;  
