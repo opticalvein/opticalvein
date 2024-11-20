@@ -61,22 +61,6 @@ body {
     margin-botton: 50px;
 }
 
-.link:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .link {
-        font-size: calc(2vw + 6px);
-    }
-}
-
-@media (max-width: 480px) {
-    .link {
-        font-size: calc(3vw + 6px);
-    }
-}
-
 .no-right-click {
     pointer-events: none; 
     user-select: none;  
@@ -91,8 +75,8 @@ body {
 .link {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: 'baskerville', sans-serif;
-    font-size: 2vw;
+    font-family: 'baskerville';
+    font-size: clamp(1rem, 2vw, 1.5rem); 
     max-width: 100%; 
     position: static;
     margin: 0;
