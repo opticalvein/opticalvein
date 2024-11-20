@@ -2,7 +2,7 @@
 
 body {
     background-image: url('images/background.png'); 
-    background-repeat: repeat-y; 
+    background-repeat: repeat-x; 
     background-size: contain; 
     background-position: center; 
     margin: 0;
@@ -139,7 +139,7 @@ body {
 
 .forbidden-page {
     background-image: url('images/bg_gate.png'); 
-    background-repeat: repeat-y; 
+    background-repeat: repeat-x; 
     background-size: contain; 
     background-position: center; 
     margin: 0;
