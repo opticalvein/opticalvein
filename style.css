@@ -198,11 +198,9 @@ body {
     text-transform: uppercase;
 }
 
-.gate-image {
-    width: 80%; 
-    height: auto;
-    max-width: 500px;           
-    margin-bottom: 20px; 
+.no-right-click {
+    pointer-events: none; 
+    user-select: none;  
 }
 
 .back-home {
