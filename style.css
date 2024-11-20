@@ -66,13 +66,13 @@ body {
 
 @media (max-width: 768px) {
     .link {
-        font-size: 24px;
+        font-size: calc(2vw + 6px);
     }
 }
 
 @media (max-width: 480px) {
     .link {
-        font-size: 18px;
+        font-size: calc(3vw + 6px);
     }
 }
 
@@ -83,7 +83,7 @@ body {
 
 .links {
     position: static;
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -179,7 +179,7 @@ body {
     font-size: 4vw;
     font-family: 'baskerville';
     color: #ffffff; 
-    text-align: center; 
+    justify-content: center;
     white-space: nowrap;  
     letter-spacing: 5px;
 }
