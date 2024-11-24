@@ -166,6 +166,20 @@ body {
     margin-botton: 20px;
 }
 
+@media (max-width: 768px) {
+    .gate-image {
+        width: 80%; 
+        max-width: 500px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .gate-image {
+        width: 90%; 
+        max-width: none; 
+    }
+}
+
 .forbidden-container {
     padding: 20px;
     border-radius: 10px;
@@ -174,9 +188,9 @@ body {
 }
 
 .forbidden-container h1 {
-    font-size: clamp(1rem, 2vw, 3rem); 
+    font-size: clamp(2rem, 2vw, 3rem); 
     right: 0;
-    font-family: 'baskerville';
+    font-family: "Times New Roman", Times, serif;
     color: #ffffff; 
     white-space: nowrap;  
     letter-spacing: 5px;
