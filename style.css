@@ -160,7 +160,7 @@ body {
 
 .gate-image {
     width: 100%; 
-    max-width: 600px; 
+    max-width: 500px; 
     height: auto; 
     align-items: center;
     margin-botton: 20px;
@@ -169,14 +169,14 @@ body {
 @media (max-width: 768px) {
     .gate-image {
         width: 80%; 
-        max-width: 500px; 
+        max-width: 400px; 
     }
 }
 
 @media (max-width: 480px) {
     .gate-image {
         width: 90%; 
-        max-width: none; 
+        max-width: 300px; 
     }
 }
 
