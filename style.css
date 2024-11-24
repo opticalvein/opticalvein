@@ -158,6 +158,13 @@ body {
     font-size: 24px;
 }
 
+.gate-image {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    align-items: center;
+    margin-botton: 20px;
+}
 
 .forbidden-container {
     padding: 20px;
@@ -175,18 +182,16 @@ body {
     letter-spacing: 5px;
 }
 
-.back-home {
-    display: inline-block;
-    margin-top: 20px;
+.forbidden-link {
+    text-decoration: none; 
+    color: white; 
+    display: inline-block; 
+    margin-top: 20px; 
+    text-align: center; 
+    transition: color 0.3s ease; 
 }
 
-.back-button {
-    width: 200px; 
-    height: auto;
-    cursor: pointer;
-    transition: filter 0.3s ease;
+.forbidden-link:hover { 
+    text-decoration: underline; 
 }
 
-.back-button:hover {
-    filter: invert(100%); 
-}
