@@ -169,14 +169,12 @@ body {
 @media (max-width: 768px) {
     .gate-image {
         width: 80%; 
-        max-width: 400px; 
     }
 }
 
 @media (max-width: 480px) {
     .gate-image {
-        width: 90%; 
-        max-width: 300px; 
+        width: 70%; 
     }
 }
 
