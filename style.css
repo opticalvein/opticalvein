@@ -141,7 +141,7 @@ body {
 /* forbidden page */
 
 .forbidden-page {
-    background-image: url('images/bg_gate.png'); 
+    background-image: url('images/forbidden.png'); 
     background-repeat: repeat-x;
     background-size: auto 100%; 
     background-position: top center; 
