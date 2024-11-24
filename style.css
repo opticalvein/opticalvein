@@ -188,10 +188,9 @@ body {
 .forbidden-container h1 {
     font-size: clamp(2rem, 2vw, 3rem); 
     right: 0;
-    font-family: "Times New Roman", Times, serif;
+    font-family: serif;
     color: #ffffff; 
-    white-space: nowrap;  
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 }
 
 .forbidden-link {
