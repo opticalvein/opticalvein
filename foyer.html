@@ -5,67 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOYER</title>
     <style>
-        /* Reset styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         /* Full-page background settings */
         body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
             background: black;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             overflow: hidden;
         }
 
-        /* Background image container */
+        /* Container for the background image */
         .background-container {
+            position: relative;
             width: 100vw;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
         }
 
-        /* Background image */
+        /* Background image with responsive scaling */
         .background {
-            width: 100vw; /* Ensures the image spans full width */
-            height: 100vh;
-            object-fit: cover; /* Ensures it covers the entire viewport while maintaining aspect ratio */
-        }
-
-        /* Back button */
-        .back-button {
-            position: absolute;
-            bottom: 8%; /* Adjust as needed */
-            left: 50%;
-            transform: translateX(-50%);
-            cursor: pointer;
-            width: 15vw; /* Adjust button size dynamically */
-            max-width: 150px; /* Prevent it from getting too large */
-        }
-
-        .back-button img {
             width: 100%;
-            height: auto;
-        }
-
-        .back-button img:hover {
-            opacity: 0.8;
+            height: 100%;
+            object-fit: contain; /* Ensures full image visibility without distortion */
         }
     </style>
 </head>
 <body>
     <div class="background-container">
-        <img src="images/foyer_page.png" alt="Background Image" class="background">
-        <a href="foyer.html" class="back-button">
-            <img src="images/back.png" alt="Back">
-        </a>
+        <img src="images/foyer.png" alt="Foyer" class="background">
     </div>
 </body>
 </html>
