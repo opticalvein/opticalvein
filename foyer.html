@@ -33,11 +33,35 @@
             height: 100%;
             object-fit: contain; /* Ensures full image visibility without distortion */
         }
+
+         /* Back button */
+        .back-button {
+            position: absolute;
+            bottom: 8%; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            width: 15vw; /* Adjust button size dynamically */
+            max-width: 150px; /* Prevent it from getting too large */
+        }
+
+        .back-button img {
+            width: 100%;
+            height: auto;
+        }
+
+        .back-button img:hover {
+            opacity: 0.8;
+        }
+  
     </style>
 </head>
 <body>
     <div class="background-container">
-        <img src="images/foyer.png" alt="Foyer" class="background">
+        <img src="images/foyer_page.png" alt="Foyer" class="background">
+        <a href="index.html" class="back-button">
+            <img src="images/back.png" alt="back">
+        </a>
     </div>
 </body>
 </html>
