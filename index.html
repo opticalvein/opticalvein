@@ -1,27 +1,48 @@
 <html>
 <head>
-<title>INDEX</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>INDEX</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        /* Make the enter.png image act like a button */
+        .button {
+            display: block; /* Ensures it behaves like a button */
+        }
+        .button img {
+            cursor: pointer; /* Changes cursor to hand */
+            transition: opacity 0.3s; /* Smooth hover effect */
+        }
+        .button img:hover {
+            opacity: 0.8; /* Slight fade effect when hovered */
+        }
+    </style>
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <!-- Save for Web Slices (opticalveinfoyer.psd) -->
 <table id="Table_01" width="1920" height="1080" border="0" cellpadding="0" cellspacing="0">
-	<tr>
-		<td colspan="3">
-			<img src="images/index_01.png" width="1920" height="849" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="2">
-			<img src="images/index_02.png" width="847" height="231" alt=""></td>
-		<td>
-			<img src="images/enter.png" width="226" height="110" alt=""></td>
-		<td rowspan="2">
-			<img src="images/index_04.png" width="847" height="231" alt=""></td>
-	</tr>
-	<tr>
-		<td>
-			<img src="images/index_05.png" width="226" height="121" alt=""></td>
-	</tr>
+    <tr>
+        <td colspan="3">
+            <img src="images/index_01.png" width="1920" height="849" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <img src="images/index_02.png" width="847" height="231" alt="">
+        </td>
+        <td>
+            <!-- Turn enter.png into a button -->
+            <a href="foyer.html" class="button">
+                <img src="images/enter.png" width="226" height="110" alt="Enter">
+            </a>
+        </td>
+        <td rowspan="2">
+            <img src="images/index_04.png" width="847" height="231" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/index_05.png" width="226" height="121" alt="">
+        </td>
+    </tr>
 </table>
 <!-- End Save for Web Slices -->
 </body>
