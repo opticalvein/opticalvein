@@ -5,41 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDEX</title>
     <style>
-        /* Reset styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         /* Full-page background settings */
         body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
             background: black;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             overflow: hidden;
         }
 
-        /* Background image container */
+        /* Container for the background image */
         .background-container {
+            position: relative;
             width: 100vw;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
         }
 
-        /* Background image */
+        /* Background image with responsive scaling */
         .background {
-            width: 100vw; /* Ensures the image spans full width */
-            height: 100vh;
-            object-fit: cover; /* Ensures it covers the entire viewport while maintaining aspect ratio */
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures full image visibility without distortion */
         }
 
-        /* Enter button */
+         /* Enter button */
         .enter-button {
             position: absolute;
             bottom: 8%; /* Adjust as needed */
@@ -58,11 +53,12 @@
         .enter-button img:hover {
             opacity: 0.8;
         }
+  
     </style>
 </head>
 <body>
     <div class="background-container">
-        <img src="images/index_page.png" alt="Background Image" class="background">
+        <img src="images/index_page.png" alt="Index" class="background">
         <a href="foyer.html" class="enter-button">
             <img src="images/enter.png" alt="Enter">
         </a>
