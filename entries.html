@@ -1,64 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>opticalveinentries</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTRIES</title>
+    <style>
+        /* Full-page background settings */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Container for the background image */
+        .background-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Background image with responsive scaling */
+        .background {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the entire image fits without distortion */
+        }
+
+        /* Enter button, positioned relative to the background */
+        .back-button {
+            position: absolute;
+            width: 10%; /* Scales proportionally to the background */
+            bottom: 10%; /* Adjust based on where the button appears in the image */
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .back-button img:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<!-- Save for Web Slices (opticalveinentries.psd) -->
-<table id="Table_01" width="1920" height="1081" border="0" cellpadding="0" cellspacing="0">
-	<tr>
-		<td colspan="6">
-			<img src="images/entries_01.png" width="1920" height="254" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2" rowspan="4">
-			<img src="images/entries_02.png" width="395" height="595" alt=""></td>
-		<td>
-			<img src="images/journal.png" width="175" height="60" alt=""></td>
-		<td colspan="3" rowspan="2">
-			<img src="images/entries_04.png" width="1350" height="93" alt=""></td>
-	</tr>
-	<tr>
-		<td>
-			<img src="images/entries_05.png" width="175" height="33" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2">
-			<img src="images/reviews.png" width="181" height="54" alt=""></td>
-		<td colspan="2" rowspan="2">
-			<img src="images/entries_07.png" width="1344" height="502" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2">
-			<img src="images/entries_08.png" width="181" height="448" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="2">
-			<img src="images/entries_09.png" width="372" height="231" alt=""></td>
-		<td colspan="4">
-			<img src="images/back2.png" width="232" height="111" alt=""></td>
-		<td rowspan="2">
-			<img src="images/entries_11.png" width="1316" height="231" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="4">
-			<img src="images/entries_12.png" width="232" height="120" alt=""></td>
-	</tr>
-	<tr>
-		<td>
-			<img src="images/spacer.gif" width="372" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="23" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="175" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="6" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="28" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1316" height="1" alt=""></td>
-	</tr>
-</table>
-<!-- End Save for Web Slices -->
+<body>
+    <div class="background-container">
+        <img src="images/entries_page.png" alt="Background Image" class="background">
+        <a href="foyer.html" class="back-button">
+            <img src="images/back.png" alt="Back Button">
+        </a>
+    </div>
 </body>
 </html>
