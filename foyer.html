@@ -5,48 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOYER</title>
     <style>
-        /* Full-page background settings */
-        body {
+        /* Reset styles */
+        * {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Full-page background settings */
+        body {
             background: black;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
             overflow: hidden;
         }
 
-        /* Container for the background image */
+        /* Background image container */
         .background-container {
-            position: relative;
             width: 100vw;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
-        /* Background image with responsive scaling */
+        /* Background image */
         .background {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Ensures the entire image fits without distortion */
+            width: 100vw; /* Ensures the image spans full width */
+            height: 100vh;
+            object-fit: cover; /* Ensures it covers the entire viewport while maintaining aspect ratio */
         }
 
-        /* Enter button, positioned relative to the background */
+        /* Back button */
         .back-button {
             position: absolute;
-            width: 10%; /* Scales proportionally to the background */
-            bottom: 10%; /* Adjust based on where the button appears in the image */
+            bottom: 8%; /* Adjust as needed */
             left: 50%;
             transform: translateX(-50%);
             cursor: pointer;
+            width: 15vw; /* Adjust button size dynamically */
+            max-width: 150px; /* Prevent it from getting too large */
         }
 
         .back-button img {
             width: 100%;
-            height: auto; /* Maintain aspect ratio */
+            height: auto;
         }
 
         .back-button img:hover {
@@ -57,8 +63,8 @@
 <body>
     <div class="background-container">
         <img src="images/foyer_page.png" alt="Background Image" class="background">
-        <a href="index.html" class="back-button">
-            <img src="images/back.png" alt="Back Button">
+        <a href="foyer.html" class="back-button">
+            <img src="images/back.png" alt="Back">
         </a>
     </div>
 </body>
