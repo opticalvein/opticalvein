@@ -1,5 +1,5 @@
 /* Disable right-click on images */
-img {
+img:not(a img) {
     pointer-events: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
