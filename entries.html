@@ -7,8 +7,8 @@
     <title>ENTRIES</title>
     <style>
         @font-face {
-            font-family: 'Cloister Black';
-            src: url('fonts/CloisterBlack.ttf') format('truetype');
+            font-family: 'Baskerville';
+            src: url('fonts/baskerville.ttf') format('truetype');
         }
 
         /* Full-page background settings */
@@ -58,13 +58,38 @@
             width: 440px;
             height: 370px;
             overflow-y: auto;
-            font-family: 'Cloister Black', serif;
+            font-family: 'Baskerville', serif;
             font-size: 24px;
             color: #3f3253;
             background: transparent;
             border: none;
             padding: 10px;
             box-sizing: border-box;
+
+            /* Custom Scrollbar */
+            --sb-track-color: #4d4950;
+            --sb-thumb-color: #6e5e77;
+            --sb-size: 8px;
+        }
+
+        .text-box::-webkit-scrollbar {
+            width: var(--sb-size);
+        }
+
+        .text-box::-webkit-scrollbar-track {
+            background: var(--sb-track-color);
+            border-radius: 2px;
+        }
+
+        .text-box::-webkit-scrollbar-thumb {
+            background: var(--sb-thumb-color);
+            border-radius: 2px;
+        }
+
+        @supports not selector(::-webkit-scrollbar) {
+            .text-box {
+                scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+            }
         }
     </style>
     <script>
