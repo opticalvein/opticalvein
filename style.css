@@ -34,3 +34,29 @@ img, body {
     height: 100%;
     background: transparent;
 }
+
+/* Make the container always 1920x1080 */
+.background-container {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    transform-origin: top left; /* Ensures scaling starts from the top-left */
+    
+    /* Scale proportionally based on the browser size */
+    transform: scale(calc(100vw / 1920));
+}
+
+/* Make sure the background image stays full size */
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Buttons and text box stay in place relative to 1920x1080 */
+.button, .text-box {
+    position: absolute;
+}
+
