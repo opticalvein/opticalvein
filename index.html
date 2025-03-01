@@ -34,7 +34,18 @@
             object-fit: contain; /* Ensures full image visibility without distortion */
         }
 
-         /* Enter button */
+        /* Last updated text */
+        .last-updated {
+            position: absolute;
+            bottom: 15%; /* Position above the enter button */
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Cloister Black', serif;
+            font-size: 18px;
+            color: #3f3253;
+        }
+
+        /* Enter button */
         .enter-button {
             position: absolute;
             bottom: 8%; /* Adjust as needed */
@@ -53,12 +64,12 @@
         .enter-button img:hover {
             opacity: 0.8;
         }
-  
     </style>
 </head>
 <body>
     <div class="background-container">
         <img src="images/index_page.png" alt="Index" class="background">
+        <div class="last-updated">last updated: 20250228</div>
         <a href="foyer.html" class="enter-button">
             <img src="images/enter.png" alt="Enter">
         </a>
