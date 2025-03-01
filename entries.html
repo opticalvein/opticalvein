@@ -67,13 +67,23 @@
             box-sizing: border-box;
         }
     </style>
+    <script>
+        function loadText(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector(".text-box").value = data;
+                })
+                .catch(error => console.error("forbidden:", error));
+        }
+    </script>
 </head>
 <body>
     <div class="background-container">
         <img src="images/entries_page.png" alt="Entries" class="background">
         
-        <a href="journal.html"><img src="images/journal.png" alt="journal" class="button journal"></a>
-        <a href="reviews.html"><img src="images/reviews.png" alt="reviews" class="button reviews"></a>
+        <a href="#" onclick="loadText('journal.txt')"><img src="images/journal.png" alt="journal" class="button journal"></a>
+        <a href="#" onclick="loadText('reviews.txt')"><img src="images/reviews.png" alt="reviews" class="button reviews"></a>
         <a href="foyer.html"><img src="images/back.png" alt="back" class="button back"></a>
 
         <textarea class="text-box">Lorem Ipsum</textarea>
