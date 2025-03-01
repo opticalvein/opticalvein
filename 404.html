@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORBIDDEN 404</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-  
+    <style>
+        body {
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .forbidden-container {
+            position: relative;
+        }
+
+        .gate-image {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .forbidden-link {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .forbidden-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <body class="forbidden-page">
     <div class="forbidden-container">
-    <img src="images/gate_frame.gif" alt="gate_frame" class="gate-image no-right-click">
-          <a href="index.html" class="forbidden-link">
-        <h1>FORBIDDEN GATE</h1>
+        <img src="images/gate_frame.gif" alt="gate_frame" class="gate-image no-right-click">
+        <a href="index.html" class="forbidden-link">
+            <h1>FORBIDDEN GATE</h1>
         </a>
-    
     </div>
 </body>
 </html>
+
