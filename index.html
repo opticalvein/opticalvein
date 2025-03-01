@@ -10,8 +10,7 @@
             font-family: 'Cloister Black';
             src: url('fonts/CloisterBlack.ttf') format('truetype');
         }
-        /* Full-page background settings */
-        body {
+       body {
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -22,21 +21,23 @@
             overflow: hidden;
         }
 
-        /* Container for the background image */
         .background-container {
             position: relative;
             width: 100vw;
             height: 100vh;
+            max-width: 1920px;
+            max-height: 1080px;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: black;
         }
 
-        /* Background image with responsive scaling */
         .background {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Ensures full image visibility without distortion */
+            object-fit: contain;
+            position: absolute;
         }
 
         /* Last updated text */
