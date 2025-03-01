@@ -1,0 +1,36 @@
+/* Disable right-click on images */
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Disable text selection for extra security */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Prevent touch-based context menus */
+img, body {
+    -webkit-touch-callout: none;
+}
+
+/* Optional: Overlay method for extra protection */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
