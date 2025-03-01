@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENTRIES</title>
     <style>
+        @font-face {
+            font-family: 'Baskerville';
+            src: url('fonts/baskerville.ttf') format('truetype');
+        }
+
         /* Full-page background settings */
         body {
             margin: 0;
@@ -34,34 +39,43 @@
             object-fit: contain; /* Ensures full image visibility without distortion */
         }
 
-         /* Back button */
-        .back-button {
+        /* Buttons */
+        .button {
             position: absolute;
-            bottom: 8%; /* Adjust as needed */
-            left: 50%;
-            transform: translateX(-50%);
             cursor: pointer;
-            width: 15vw; /* Adjust button size dynamically */
-            max-width: 150px; /* Prevent it from getting too large */
         }
 
-        .back-button img {
-            width: 80%;
-            height: auto;
-        }
+        .journal { top: 230px; left: 120px; width: 120px; }
+        .reviews { top: 320px; left: 120px; width: 120px; }
+        .back { bottom: 30px; left: 100px; width: 150px; }
 
-        .back-button img:hover {
-            opacity: 0.8;
+        /* Scrollable text box inside the frame */
+        .text-box {
+            position: absolute;
+            top: 240px;
+            left: 480px;
+            width: 600px;
+            height: 320px;
+            overflow-y: auto;
+            font-family: 'Baskerville', serif;
+            font-size: 18px;
+            color: black;
+            background: transparent;
+            border: 2px solid red;
+            padding: 10px;
+            box-sizing: border-box;
         }
-  
     </style>
 </head>
 <body>
     <div class="background-container">
         <img src="images/entries_page.png" alt="Entries" class="background">
-        <a href="foyer.html" class="back-button">
-            <img src="images/back.png" alt="back">
-        </a>
+        
+        <a href="journal.html"><img src="images/journal.png" alt="journal" class="button journal"></a>
+        <a href="reviews.html"><img src="images/reviews.png" alt="reviews" class="button reviews"></a>
+        <a href="foyer.html"><img src="images/back.png" alt="back" class="button back"></a>
+
+        <textarea class="text-box">This is some sample text inside the scrollable area. Adjust the size and position as needed.</textarea>
     </div>
 </body>
 </html>
