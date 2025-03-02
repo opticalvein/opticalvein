@@ -23,12 +23,14 @@
         }
 
         .background-container {
-            position: absolute;
+            position: relative;
             width: 100vw;
             height: 100vh;
+            display: flex;
             justify-content: center;
             align-items: center;
             background: black;
+            overflow: hidden; 
         }
 
         .content-wrapper {
@@ -81,9 +83,9 @@
 </head>
 <body>
     <div class="background-container">
-        <img src="images/index_page.png" alt="Index" class="background">
         <div class="content-wrapper">
-            <div class="last-updated">last updated: 20250301</div>
+            <img src="images/index_page.png" alt="Index" class="background">
+            <div class="last-updated">last updated: 20250228</div>
             <a href="foyer.html" class="enter-button">
                 <img src="images/enter.png" alt="Enter">
             </a>
