@@ -35,8 +35,9 @@
 
         .content-wrapper {
             position: relative;
-            width: 1300px; /* Fixed width as per your optimal layout */
-            height: 730px; /* Fixed height as per your optimal layout */
+            width: 1300px; /* Fixed width - prevents horizontal compression */
+            height: 730px; /* Fixed height */
+            min-width: 1300px; /* Critical: ensures no horizontal compression */
         }
 
         .background {
@@ -45,6 +46,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            object-fit: none; /* Critical: prevents image from scaling/compressing */
         }
 
         /* Last updated text */
