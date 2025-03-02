@@ -26,25 +26,31 @@
             position: relative;
             width: 100vw;
             height: 100vh;
-            max-width: 1920px;
-            max-height: 1080px;
             display: flex;
             justify-content: center;
             align-items: center;
             background: black;
+            overflow: hidden; /* Will clip content when browser gets too small */
+        }
+
+        .content-wrapper {
+            position: relative;
+            width: 1300px; /* Fixed width as per your optimal layout */
+            height: 730px; /* Fixed height as per your optimal layout */
         }
 
         .background {
             width: 100%;
             height: 100%;
-            object-fit: contain;
             position: absolute;
+            top: 0;
+            left: 0;
         }
 
         /* Last updated text */
         .last-updated {
             position: absolute;
-            bottom: 23%; /* Position above the enter button */
+            bottom: 23%; /* Fixed position */
             left: 50%;
             transform: translateX(-50%);
             font-family: 'Cloister Black', serif;
@@ -56,12 +62,11 @@
         /* Enter button */
         .enter-button {
             position: absolute;
-            bottom: 10%; /* Adjust as needed */
+            bottom: 10%; /* Fixed position */
             left: 50%;
             transform: translateX(-50%);
             cursor: pointer;
-            width: 15vw; /* Adjust button size dynamically */
-            max-width: 150px; /* Prevent it from getting too large */
+            width: 150px; /* Fixed width */
         }
 
         .enter-button img {
@@ -72,16 +77,17 @@
         .enter-button img:hover {
             opacity: 0.8;
         }
-        
     </style>
 </head>
 <body>
     <div class="background-container">
-        <img src="images/index_page.png" alt="Index" class="background">
-        <div class="last-updated">last updated: 20250228</div>
-        <a href="foyer.html" class="enter-button">
-            <img src="images/enter.png" alt="Enter">
-        </a>
+        <div class="content-wrapper">
+            <img src="images/index_page.png" alt="Index" class="background">
+            <div class="last-updated">last updated: 20250228</div>
+            <a href="foyer.html" class="enter-button">
+                <img src="images/enter.png" alt="Enter">
+            </a>
+        </div>
     </div>
 </body>
 </html>
