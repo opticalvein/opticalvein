@@ -1,0 +1,207 @@
+body {
+    background-color: black;
+    color: rgba(255,255,255,0.8);
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-header {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation links (position unchanged) */
+.nav-links {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 25px;
+    position: relative;
+}
+
+/* Extended bottom border under nav-links */
+.nav-links::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -50px; /* extend left */
+    width: calc(100% + 100px); /* extend right */
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+    border-image-slice: 1;
+}
+
+.nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* "optical♱vein" text between two fading border lines */
+.site-title {
+    font-size: 2rem;
+    color: cornflowerblue;
+    letter-spacing: 2px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+/* Extended top border above the site-title */
+.site-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: calc(100% + 100px);
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+    border-image-slice: 1;
+}
+
+/* Extended bottom border below the site-title */
+.site-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    width: calc(100% + 100px);
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+    border-image-slice: 1;
+}
+
+/* Bottom links section (position unchanged) */
+.sub-nav-links {
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+/* Extended border line above bottom links */
+.sub-nav-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: calc(100% + 100px);
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.6), transparent);
+    border-image-slice: 1;
+}
+
+.sub-nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sub-nav-links a:hover {
+    color: white;
+}
+
+.title-gif {
+    height: 30px; /* Adjust height as desired */
+    width: auto;  /* Keeps image aspect ratio */
+    margin-left: 10px; /* Space between text and gif */
+    vertical-align: middle; /* Align vertically with text */
+}
+
+.home-link {
+    color: inherit; /* keep original color */
+    text-decoration: none; /* removes underline */
+    cursor: pointer; /* hand cursor on hover */
+}
+
+.home-link:hover {
+    color: inherit; /* prevents color change on hover */
+    text-decoration: none; /* no underline on hover */
+}
+
+.page-subheader {
+    font-size: 1.5rem;
+    color: cornflowerblue; /* updated color */
+    letter-spacing: 2px;
+    margin-top: 230px; /* moved further down */
+    margin-left: 320px; /* positioned further right */
+    padding: 8px 0;
+    position: relative;
+    display: inline-block;
+}
+
+/* Slightly longer top border */
+.page-subheader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px; /* slightly longer borders */
+    width: calc(100% + 80px);
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+    border-image-slice: 1;
+}
+
+/* Slightly longer bottom border */
+.page-subheader::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -40px; /* slightly longer borders */
+    width: calc(100% + 80px);
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+    border-image-slice: 1;
+}
+
+.site-footer {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 30px 0 20px;
+    margin-top: 100px;
+    font-family: serif;
+}
+
+.news-entry {
+    margin-left: 160px; /* matches .page-subheader's left offset */
+    margin-top: 10px;
+    color: rgba(255,255,255,0.75);
+    font-family: serif;
+    font-size: 0.95rem;
+}
+
+.news-date {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.news-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.page-content {
+    margin-left: 120px; /* aligns with subheader */
+    margin-top: 30px;   /* slight spacing below subheader */
+    max-width: 600px;   /* optional: controls text width for readability */
+}
+
+}
