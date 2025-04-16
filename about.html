@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- SITE HEADER (unchanged) -->
     <header class="fixed-header">
         <nav class="nav-links">
             <a href="about.html">about</a>
@@ -19,17 +20,47 @@
             <img src="images/eye.gif" alt="Animated GIF" class="title-gif">
         </div>
         <nav class="sub-nav-links">
-            <a href="library.html">library</a>
+            <a href="boudoir.html">boudoir</a>
             <a href="entries.html">entries</a>
             <a href="collections.html">collections</a>
             <a href="links.html">links</a>
         </nav>
     </header>
+
+    <!-- COLLAPSIBLE NAV ON LEFT (below main header) -->
+    <nav class="left-sub-nav">
+        <details class="dropdown">
+            <summary>directory</summary>
+            <ul class="dropdown-content">
+                <li><a href="#">sitemap</a></li>
+            </ul>
+        </details>
+
+        <details class="dropdown">
+            <summary>webmistress</summary>
+            <ul class="dropdown-content">
+                <li><a href="#">favorite artists</a></li>
+                <li><a href="#">favorite films</a></li>
+                <li><a href="#">favorite books</a></li>
+            </ul>
+        </details>
+
+        <details class="dropdown">
+            <summary>q&a</summary>
+            <ul class="dropdown-content">
+                <li><a href="#">submit questions!</a></li>
+            </ul>
+        </details>
+    </nav>
+
+    <!-- MAIN PAGE CONTENT -->
     <main>
         <div class="page-subheader">about</div>
+    <!-- No dummy text here, as requested -->
     </main>
+
     <footer class="site-footer">
-    &copy; 2025 optical♱vein. all rights reserved.
-</footer>
+        &copy; 2024-2025 optical♱vein. all rights reserved.
+    </footer>
 </body>
 </html>

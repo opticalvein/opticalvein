@@ -1,42 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEWS</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INDEX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  
+  .update-log summary {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.95rem;
+    margin-bottom: 0.3em;
+    cursor: pointer;
+    display: list-item;
+    list-style: none;
+    padding-left: 0;
+    color: inherit;
+  }
+  
+  .update-log summary::marker {
+    content: "♱";
+    font-family: inherit;
+    font-style: normal;
+    color: var(--highlight, #aaa);
+  }
+
+  .update-log summary::after {
+    content: none !important;
+    display: none !important;
+  }
+</style>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <header class="fixed-header">
-        <nav class="nav-links">
-            <a href="about.html">about</a>
-            <a href="atelier.html">atelier</a>
-            <a href="gallery.html">gallery</a>
-            <a href="contact.html">contact</a>
-        </nav>
-        <div class="site-title">
-            <a href="index.html" class="home-link">optical♱vein</a>
-            <img src="images/eye.gif" alt="Animated GIF" class="title-gif">
-        </div>
-        <nav class="sub-nav-links">
-            <a href="library.html">library</a>
-            <a href="entries.html">entries</a>
-            <a href="collections.html">collections</a>
-            <a href="links.html">links</a>
-        </nav>
-    </header>
-    <main>
-        <div class="page-subheader">news</div>
-        <div class="page-content">
-        <section class="news-entry">
-            <p class="news-date">April 3, 2025</p>
-            <ul class="news-list">
-                <li>redesigned web layout</li>
-            </ul>
-        </section>
-    </main>
-    <footer class="site-footer">
-    &copy; 2025 optical♱vein. all rights reserved.
-</footer>
+  <header class="fixed-header">
+    <nav class="nav-links">
+      <a href="about.html">about</a>
+      <a href="atelier.html">atelier</a>
+      <a href="gallery.html">gallery</a>
+      <a href="contact.html">contact</a>
+    </nav>
+    <div class="site-title">
+      <a href="index.html" class="home-link">optical♱vein</a>
+      <img src="images/eye.gif" alt="Animated GIF" class="title-gif" />
+    </div>
+    <nav class="sub-nav-links">
+      <a href="boudoir.html">boudoir</a>
+      <a href="entries.html">entries</a>
+      <a href="collections.html">collections</a>
+      <a href="links.html">links</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- LEFT NAVIGATION -->
+    <nav class="left-sub-nav">
+      <details class="dropdown">
+        <summary>updates</summary>
+        <ul class="dropdown-content">
+          <li><a href="index.html?view=2025">2025</a></li>
+          <li><a href="index.html?view=2024">2024</a></li>
+        </ul>
+      </details>
+
+      <details class="dropdown">
+        <summary>recommendations</summary>
+        <ul class="dropdown-content">
+          <li><a href="index.html?view=song-of-the-month">song of the month</a></li>
+          <li><a href="index.html?view=artwork-of-the-month">artwork of the month</a></li>
+          <li><a href="index.html?view=film-of-the-month">film of the month</a></li>
+        </ul>
+      </details>
+
+      <details class="dropdown">
+        <summary>announcements</summary>
+        <ul class="dropdown-content">
+          <li><a href="index.html?view=collaborations">collaborations</a></li>
+          <li><a href="index.html?view=whats-new">what's new?</a></li>
+        </ul>
+      </details>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-subheader" id="index-header">
+      updates
+      <img src="images/jellyfish.gif" alt="Jellyfish" class="jellyfish-img" />
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+      <section id="default-news" class="view-section"></section>
+      <section id="2024" class="view-section"></section>
+      <section id="song-of-the-month" class="view-section"></section>
+      <section id="artwork-of-the-month" class="view-section"></section>
+      <section id="film-of-the-month" class="view-section"></section>
+      <section id="collaborations" class="view-section"></section>
+      <section id="whats-new" class="view-section"></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2024–2025 optical♱vein. all rights reserved.
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    let view = params.get("view");
+
+    if (!view) {
+      history.replaceState(null, "", "?view=2025");
+      view = "2025";
+    }
+
+    const header = document.getElementById("index-header");
+    const jelly = document.querySelector(".jellyfish-img");
+    const sections = document.querySelectorAll(".view-section");
+
+    sections.forEach(s => s.style.display = "none");
+
+    const siteUpdateViews = ["2025", "2024"];
+
+    const labelFromView = (v) => {
+      if (!v || siteUpdateViews.includes(v)) return "updates";
+      if (v === "whats-new") return "what's new?";
+      return v.replace(/-/g, " ");
+    };
+
+    const getSectionId = (v) => {
+      if (!v || v === "2025") return "default-news";
+      return v;
+    };
+
+    const label = labelFromView(view);
+    const sectionId = getSectionId(view);
+    const targetSection = document.getElementById(sectionId);
+
+    header.firstChild.textContent = label;
+    jelly.style.display = siteUpdateViews.includes(view.toLowerCase()) ? "inline" : "none";
+
+    if (targetSection && siteUpdateViews.includes(view)) {
+      targetSection.style.display = "block";
+
+      const fileName = `updates-${view}.md`;
+
+      fetch(fileName)
+        .then(res => res.ok ? res.text() : Promise.reject("Update file not found."))
+        .then(md => {
+          const rawHtml = marked.parse(md);
+
+          // Split into sections by H3 and wrap in details
+          const parts = rawHtml.split(/<h3>(.*?)<\/h3>/g).filter(Boolean);
+
+          let html = '<div class="update-log">';
+          for (let i = 0; i < parts.length; i += 2) {
+            const date = parts[i];
+            const list = parts[i + 1];
+            html += `<details><summary>${date}</summary>${list}</details>`;
+          }
+          html += '</div>';
+
+          targetSection.innerHTML = html;
+        })
+        .catch(err => {
+          targetSection.innerHTML = "<p>Failed to load update log.</p>";
+        });
+    }
+  </script>
 </body>
 </html>
