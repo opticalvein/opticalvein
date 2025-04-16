@@ -80,6 +80,42 @@
     </nav>
   </header>
 
+  <nav class="left-sub-nav">
+    <details class="dropdown">
+      <summary>photography</summary>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html?view=digital">digital</a></li>
+        <li><a href="gallery.html?view=film">film</a></li>
+      </ul>
+    </details>
+
+    <details class="dropdown">
+      <summary>artworks</summary>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html?view=traditional">traditional</a></li>
+        <li><a href="gallery.html?view=computer-graphics">computer graphics</a></li>
+        <li><a href="gallery.html?view=multimedia">multimedia</a></li>
+      </ul>
+    </details>
+
+    <details class="dropdown">
+      <summary>scans</summary>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html?view=magazines">magazines</a></li>
+        <li><a href="gallery.html?view=books">books</a></li>
+        <li><a href="gallery.html?view=cds-dvds">cds & dvds</a></li>
+      </ul>
+    </details>
+
+    <details class="dropdown">
+      <summary>publications</summary>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html?view=zines">zines</a></li>
+        <li><a href="gallery.html?view=prints">prints</a></li>
+      </ul>
+    </details>
+  </nav>
+
   <main>
     <div class="page-subheader" id="gallery-header">gallery</div>
     <section class="image-gallery" id="gallery-content"></section>
@@ -162,7 +198,7 @@
       loadGallery(view);
     } else {
       header.textContent = "gallery";
-      content.innerHTML = "<p style='margin-left:320px;'>Please select a category from the left.</p>";
+      document.getElementById("gallery-content").innerHTML = "";
     }
   </script>
 </body>
