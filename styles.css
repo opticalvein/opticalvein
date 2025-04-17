@@ -15,7 +15,6 @@ body {
     flex-direction: column;
 }
 
-/* Navigation links (position unchanged) */
 .nav-links {
     font-family: sans-serif;
     font-size: 0.9rem;
@@ -27,13 +26,12 @@ body {
     position: relative;
 }
 
-/* Extended bottom border under nav-links */
 .nav-links::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: -50px; /* extend left */
-    width: calc(100% + 100px); /* extend right */
+    left: -50px;
+    width: calc(100% + 100px);
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
     border-image-slice: 1;
@@ -49,7 +47,6 @@ body {
     color: white;
 }
 
-/* "optical♱vein" text between two fading border lines */
 .site-title {
     font-size: 2rem;
     color: cornflowerblue;
@@ -59,7 +56,6 @@ body {
     position: relative;
 }
 
-/* Extended top border above the site-title */
 .site-title::before {
     content: '';
     position: absolute;
@@ -71,7 +67,6 @@ body {
     border-image-slice: 1;
 }
 
-/* Extended bottom border below the site-title */
 .site-title::after {
     content: '';
     position: absolute;
@@ -83,7 +78,6 @@ body {
     border-image-slice: 1;
 }
 
-/* Bottom links section (position unchanged) */
 .sub-nav-links {
     font-family: sans-serif;
     font-size: 0.85rem;
@@ -95,7 +89,6 @@ body {
     position: relative;
 }
 
-/* Extended border line above bottom links */
 .sub-nav-links::before {
     content: '';
     position: absolute;
@@ -118,52 +111,50 @@ body {
 }
 
 .title-gif {
-    height: 30px; /* Adjust height as desired */
-    width: auto;  /* Keeps image aspect ratio */
-    margin-left: 10px; /* Space between text and gif */
-    vertical-align: middle; /* Align vertically with text */
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 .home-link {
-    color: inherit; /* keep original color */
-    text-decoration: none; /* removes underline */
-    cursor: pointer; /* hand cursor on hover */
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .home-link:hover {
-    color: inherit; /* prevents color change on hover */
-    text-decoration: none; /* no underline on hover */
+    color: inherit;
+    text-decoration: none;
 }
 
 .page-subheader {
     font-size: 1.5rem;
-    color: cornflowerblue; /* updated color */
+    color: cornflowerblue;
     letter-spacing: 2px;
-    margin-top: 230px; /* moved further down */
-    margin-left: 320px; /* positioned further right */
+    margin-top: 230px;
+    margin-left: 320px;
     padding: 8px 0;
     position: relative;
     display: inline-block;
 }
 
-/* Slightly longer top border */
 .page-subheader::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -40px; /* slightly longer borders */
+    left: -40px;
     width: calc(100% + 80px);
     border-top: 2px solid;
     border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
     border-image-slice: 1;
 }
 
-/* Slightly longer bottom border */
 .page-subheader::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: -40px; /* slightly longer borders */
+    left: -40px;
     width: calc(100% + 80px);
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
@@ -180,7 +171,7 @@ body {
 }
 
 .news-entry {
-    margin-left: 160px; /* matches .page-subheader's left offset */
+    margin-left: 160px;
     margin-top: 0px;
     color: rgba(255,255,255,0.75);
     font-family: serif;
@@ -205,69 +196,78 @@ body {
 
 .jellyfish-img {
    position: absolute;
-   top: 0px;        /* tweak to shift image slightly above "news" text */
-   left: 100%;       /* places image immediately to the right edge of subheader text */
-   margin-left: 150px;/* extra gap to separate from text */
-   width: 250px;     /* or however wide you want */
-   height: auto;     /* maintain aspect ratio */
-   z-index: 10;      /* keeps it on top if needed */
+   top: 0px;
+   left: 100%;
+   margin-left: 150px;
+   width: 250px;
+   height: auto;
+   z-index: 10;
 }
 
-/* Positions collapsible nav below your main header. Tweak top/left to suit. */
 .left-sub-nav {
     position: absolute;
     top: 200px;
     left: 40px;
     width: 180px;
     font-family: serif;  
-    font-weight: bold;        /* headings are bold */
+    font-weight: bold;
     color: rgba(255,255,255,0.8);
 }
 
-/* Each collapsible block is a <details> element */
 .dropdown {
-    margin-bottom: 15px; /* space between each section */
+    margin-bottom: 15px;
 }
 
-/* The <summary> is the clickable header text */
 .dropdown summary {
     cursor: pointer;
-    outline: none;        /* remove dotted focus outlines if desired */
-    list-style: none;     /* hide default bullet in some browsers */
-    font-weight: bold;    /* headings in bold */
-    margin-bottom: 5px;   /* spacing before the sub-links */
+    outline: none;
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline;
 }
 
-/* Hide the default browser's disclosure arrow, 
-   so we can use our own right/down arrows. */
 .dropdown summary::-webkit-details-marker {
     display: none;
 }
+
 details summary::marker {
-    display: none; /* For Firefox, if needed */
+    display: none;
 }
 
-/* Our custom arrow: right arrow by default */
+/* LEFT NAV ICONS (still hands) */
 .dropdown summary::after {
-    content: "☞";          /* right-pointing triangle */
-    display: inline-block; /* to allow margin, transforms, etc. */
+    content: "➵";
+    display: inline;
+    font-family: sans-serif;
     margin-left: 8px;
+    pointer-events: none;
 }
 
-/* When the details is open, use a down arrow */
 details[open] summary::after {
-    content: "☟"; 
+    content: "➴";
 }
 
-/* The UL that holds sub-links */
+/* UPDATE LOG DROPDOWNS (under 'updates') */
+.update-log details summary::after {
+    content: "➵";
+    display: inline;
+    font-family: sans-serif;
+    margin-left: 8px;
+    pointer-events: none;
+}
+
+.update-log details[open] summary::after {
+    content: "➴";
+}
+
 .dropdown-content {
-    list-style: none;  /* no default bullets */
+    list-style: none;
     margin: 0;
-    margin-left: 15px; /* slight indent for sub-links */
+    margin-left: 15px;
     padding: 0;
 }
 
-/* Sublinks can be normal or bold; here's normal for contrast */
 .dropdown-content li a {
     text-decoration: none;
     color: rgba(255,255,255,0.8);
@@ -278,12 +278,12 @@ details[open] summary::after {
 .dropdown-content li a:hover {
     color: white;
 }
-   
+
 .scrollable-news {
-  max-height: 240px;        /* Adjust based on how far down you want it */
+  max-height: 240px;
   overflow-y: scroll;
   padding-right: 8px;
-  margin-left: 320px;       /* Aligns with page-subheader */
+  margin-left: 320px;
 }
 
 .scrollable-news::-webkit-scrollbar {
@@ -292,14 +292,14 @@ details[open] summary::after {
 }
 
 .update-log {
-  transform: translateX(-20px);     /* shift under header */
-  margin-top: 10px;                 /* closer to the header */
+  transform: translateX(-20px);
+  margin-top: 10px;
   max-width: 520px;
   max-height: 240px;
   overflow-y: auto;
   font-family: serif;
-  font-size: 0.9rem;               /* slightly smaller */
-  line-height: 1.5;                 /* tighter spacing */
+  font-size: 0.9rem;
+  line-height: 1.5;
   font-style: normal;
   padding-right: 8px;
 }
@@ -309,12 +309,10 @@ details[open] summary::after {
   background: transparent;
 }
 
-/* COLLAPSIBLE HEADERS (just the date) */
 .update-log details {
   margin-bottom: 0.8em; 
 }
 
-/* INDENTED BULLETS */
 .update-log ul {
   padding-left: 1.2em;
   margin-top: 0.4em;
@@ -342,9 +340,9 @@ body {
   background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   background-position: -160px -60px;
-  background-size: 600px auto;       /* fixed image size */
+  background-size: 600px auto;
   background-color: black;
-  background-attachment: scroll;     /* prevents image disappearing */
+  background-attachment: scroll;
 }
 
 body::before {
@@ -352,6 +350,6 @@ body::before {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* adjust darkness */
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
