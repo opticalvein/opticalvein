@@ -178,11 +178,6 @@ body {
     font-size: 0.95rem;
 }
 
-.news-date {
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
 .news-list {
     list-style-type: disc;
     padding-left: 20px;
